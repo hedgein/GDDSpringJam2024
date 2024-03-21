@@ -1,8 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://gmmuphfshtjp"]
+[gd_scene load_steps=3 format=3 uid="uid://gmmuphfshtjp"]
 
-[ext_resource type="Texture2D" uid="uid://o1a0t2g4treg" path="res://TempSprites/testmap.png" id="1_2ba86"]
+[ext_resource type="Texture2D" uid="uid://o1a0t2g4treg" path="res://TempSprites/testmap.png" id="1_l4qpy"]
+[ext_resource type="PackedScene" uid="uid://bfxuixl1v4a7g" path="res://Scenes/Player.tscn" id="2_jxbnx"]
 
-[node name="Node2D" type="Node2D"]
+[node name="TownScene" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_2ba86")
+texture = ExtResource("1_l4qpy")
+
+[node name="Player" parent="." instance=ExtResource("2_jxbnx")]

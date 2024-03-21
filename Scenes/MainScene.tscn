@@ -1,4 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://ddsvqwt87vpdi"]
+[gd_scene load_steps=3 format=3 uid="uid://ddsvqwt87vpdi"]
+
+[ext_resource type="PackedScene" uid="uid://gmmuphfshtjp" path="res://Scenes/TownScene.tscn" id="1_4vxta"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_xbrar"]
 font_size = 75
@@ -17,3 +19,5 @@ offset_bottom = 23.0
 grow_horizontal = 2
 text = "Art of the Deal"
 label_settings = SubResource("LabelSettings_xbrar")
+
+[node name="TownScene" parent="." instance=ExtResource("1_4vxta")]
