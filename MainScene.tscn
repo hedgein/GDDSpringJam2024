@@ -1,9 +1,19 @@
-[gd_scene format=3 uid="uid://ddsvqwt87vpdi"]
+[gd_scene load_steps=2 format=3 uid="uid://ddsvqwt87vpdi"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_xbrar"]
+font_size = 75
 
 [node name="RootNode" type="Node2D"]
 
-[node name="Viewport1" type="SubViewport" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="Label" type="Label" parent="Viewport1"]
-offset_right = 40.0
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -56.5
+offset_right = 56.5
 offset_bottom = 23.0
+grow_horizontal = 2
+text = "Art of the Deal"
+label_settings = SubResource("LabelSettings_xbrar")
