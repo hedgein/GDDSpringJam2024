@@ -11,7 +11,8 @@ func talk():
 		if d < min_distance:
 			closest_person = person
 	if closest_person != null:
-		print(closest_person.person_name, closest_person)	
+		print(closest_person.person_name, closest_person)
+		Dialogic.start_timeline("test_timeline")	
 	
 
 func get_input():

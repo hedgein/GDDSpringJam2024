@@ -17,7 +17,7 @@
 "portraits": {
 "test": {
 "export_overrides": {
-"image": "\"res://TempSprites/devil.png\""
+"image": "\"res://icon.svg\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
