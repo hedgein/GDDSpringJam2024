@@ -1,0 +1,7 @@
+join test 0
+test (test): Hi, what brings you to town?
+[wait_input hide_text="false"]
+test (test): Thats awesome! I'm the Ultimate Fishing Wrangler here. No one can beat me in wrangling these carps from the river nearby!
+[wait_input hide_text="false"]
+test (test): Ohpe! Them carps are calling! Gonna get wrangling!
+[end_timeline]

@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://iicymabnbme0"]
+
+[ext_resource type="Script" path="res://Scenes/test_dialogue.gd" id="1_mo3cv"]
+[ext_resource type="Script" path="res://Scenes/Button.gd" id="2_n8ewv"]
+[ext_resource type="Texture2D" uid="uid://o1a0t2g4treg" path="res://TempSprites/testmap.png" id="3_0ihb3"]
+[ext_resource type="Script" path="res://addons/dialogic/Modules/Character/node_portrait_container.gd" id="4_33l72"]
+
+[node name="TestDialogue" type="Node2D"]
+script = ExtResource("1_mo3cv")
+
+[node name="Testmap" type="Sprite2D" parent="."]
+position = Vector2(-62, -317)
+texture = ExtResource("3_0ihb3")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 782.0
+offset_top = 224.0
+offset_right = 890.0
+offset_bottom = 324.0
+script = ExtResource("2_n8ewv")
+
+[node name="DialogicNode_PortraitContainer" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 135.0
+offset_top = 126.0
+offset_right = 508.0
+offset_bottom = 499.0
+script = ExtResource("4_33l72")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

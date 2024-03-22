@@ -15,13 +15,21 @@ run/main_scene="res://Scenes/MainScene.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
+
 [dialogic]
 
-directories/dch_directory={}
-directories/dtl_directory={}
+directories/dch_directory={
+"test": "res://dialogic_assets/test.dch"
+}
+directories/dtl_directory={
+"test_timeline": "res://dialogic_assets/test_timeline.dtl"
+}
 glossary/default_case_sensitive=true
-layout/style_list=[]
-layout/default_style="Default"
+layout/style_list=["res://dialogic_assets/test_style.tres"]
+layout/default_style="res://dialogic_assets/test_style.tres"
 variables={}
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
