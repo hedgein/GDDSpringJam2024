@@ -3,6 +3,15 @@ extends CharacterBody2D
 @export var speed = 400
 
 func talk():
+	var people = get_tree().get_nodes_in_group("Townspeople")
+	var closest_person : Node2D
+	var min_distance : int = 101
+	for person in people:
+		var d = position.distance_to(person.position)
+		if d < min_distance:
+			closest_person = person
+	if closest_person != null:
+		print(closest_person.person_name, closest_person)	
 	
 
 func get_input():

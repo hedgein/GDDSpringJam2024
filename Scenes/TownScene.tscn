@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://gmmuphfshtjp"]
+[gd_scene load_steps=4 format=3 uid="uid://gmmuphfshtjp"]
 
 [ext_resource type="Texture2D" uid="uid://o1a0t2g4treg" path="res://TempSprites/testmap.png" id="1_l4qpy"]
 [ext_resource type="PackedScene" uid="uid://bfxuixl1v4a7g" path="res://Scenes/Player.tscn" id="2_jxbnx"]
+[ext_resource type="PackedScene" uid="uid://8qie5wxnci5f" path="res://Scenes/Townsperson.tscn" id="3_ec2kp"]
 
 [node name="TownScene" type="Node2D"]
 
@@ -9,3 +10,18 @@
 texture = ExtResource("1_l4qpy")
 
 [node name="Player" parent="." instance=ExtResource("2_jxbnx")]
+
+[node name="Townsperson" parent="." instance=ExtResource("3_ec2kp")]
+person_name = "Abby"
+x = 100
+y = 200
+
+[node name="Townsperson2" parent="." instance=ExtResource("3_ec2kp")]
+person_name = "Bobby"
+x = 300
+y = -400
+
+[node name="Townsperson3" parent="." instance=ExtResource("3_ec2kp")]
+person_name = "Callie"
+x = -500
+y = 600

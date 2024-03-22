@@ -21,3 +21,5 @@ text = "Art of the Deal"
 label_settings = SubResource("LabelSettings_xbrar")
 
 [node name="TownScene" parent="." instance=ExtResource("1_4vxta")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
