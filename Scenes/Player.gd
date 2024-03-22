@@ -12,7 +12,7 @@ func talk():
 			closest_person = person
 	if closest_person != null:
 		print(closest_person.person_name, closest_person)
-		Dialogic.start_timeline("test_timeline")	
+		Dialogic.start("test_timeline")
 	
 
 func get_input():

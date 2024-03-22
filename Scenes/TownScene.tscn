@@ -1,23 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://gmmuphfshtjp"]
+[gd_scene load_steps=4 format=3 uid="uid://gmmuphfshtjp"]
 
 [ext_resource type="Texture2D" uid="uid://o1a0t2g4treg" path="res://TempSprites/testmap.png" id="1_l4qpy"]
 [ext_resource type="PackedScene" uid="uid://bfxuixl1v4a7g" path="res://Scenes/Player.tscn" id="2_jxbnx"]
 [ext_resource type="PackedScene" path="res://Scenes/Townsperson.tscn" id="3_ec2kp"]
-[ext_resource type="Script" path="res://addons/dialogic/Modules/Character/node_portrait_container.gd" id="4_dro6n"]
 
 [node name="TownScene" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_l4qpy")
-
-[node name="DialogicNode_PortraitContainer" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = -471.0
-offset_top = -173.0
-offset_right = -143.0
-offset_bottom = 155.0
-script = ExtResource("4_dro6n")
 
 [node name="Player" parent="." instance=ExtResource("2_jxbnx")]
 
