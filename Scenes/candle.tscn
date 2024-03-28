@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://b1vqyj8mh2xgd"]
+
+[ext_resource type="Texture2D" uid="uid://3k5e21qssx2q" path="res://TempSprites/candle_over.png" id="1_7xd14"]
+[ext_resource type="Script" path="res://Scenes/candle.gd" id="2_oivf8"]
+[ext_resource type="Texture2D" uid="uid://ckfd2e12yminm" path="res://TempSprites/candle_progress.png" id="3_rowa0"]
+[ext_resource type="Texture2D" uid="uid://fvm4pl1q2vg" path="res://TempSprites/candle_plate.png" id="4_6klvx"]
+
+[node name="TextureProgressBar" type="TextureProgressBar"]
+offset_right = 130.0
+offset_bottom = 300.0
+max_value = 180.0
+value = 180.0
+fill_mode = 3
+texture_progress = ExtResource("1_7xd14")
+script = ExtResource("2_oivf8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(65, -25)
+texture = ExtResource("3_rowa0")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(65, 280)
+texture = ExtResource("4_6klvx")

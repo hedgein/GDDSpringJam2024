@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://ddsvqwt87vpdi"]
+
+[ext_resource type="PackedScene" uid="uid://gmmuphfshtjp" path="res://Scenes/TownScene.tscn" id="1_4vxta"]
+[ext_resource type="Texture2D" uid="uid://3k5e21qssx2q" path="res://TempSprites/candle_over.png" id="2_x20l3"]
+[ext_resource type="Texture2D" uid="uid://ckfd2e12yminm" path="res://TempSprites/candle_progress.png" id="3_2nemv"]
+[ext_resource type="Script" path="res://Scenes/candle.gd" id="4_2ltgw"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_xbrar"]
+font_size = 75
+
+[node name="RootNode" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -56.5
+offset_right = 56.5
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "Art of the Deal"
+label_settings = SubResource("LabelSettings_xbrar")
+
+[node name="TownScene" parent="." instance=ExtResource("1_4vxta")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.5, 0.5)
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+offset_left = -1128.0
+offset_top = 320.0
+offset_right = -998.0
+offset_bottom = 620.0
+max_value = 0.3
+fill_mode = 2
+texture_over = ExtResource("2_x20l3")
+texture_progress = ExtResource("3_2nemv")
+script = ExtResource("4_2ltgw")
