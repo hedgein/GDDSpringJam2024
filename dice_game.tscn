@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dd6gv4f2eh07s"]
+
+[ext_resource type="Script" path="res://dice_game.gd" id="1_fuqlt"]
+[ext_resource type="Texture2D" uid="uid://d07gcx0xjqb1q" path="res://TempSprites/spooky_table.png" id="2_uvwdi"]
+[ext_resource type="PackedScene" uid="uid://pl31x6ff6x2c" path="res://die.tscn" id="3_3aklw"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_fuqlt")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_uvwdi")
+
+[node name="Die" parent="." instance=ExtResource("3_3aklw")]
+position = Vector2(100, -100)
+
+[node name="Die2" parent="." instance=ExtResource("3_3aklw")]
+position = Vector2(-100, -100)
