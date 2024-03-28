@@ -14,6 +14,7 @@ func _ready():
 func _physics_process(delta):
 	# IF DAY: 
 	if is_day:
+		print(day_countdown)
 		day_countdown -= delta
 		# check when day ends
 		if day_countdown <= 0:
@@ -22,6 +23,7 @@ func _physics_process(delta):
 			day_countdown = 60.0 * day_mins
 	# IF NIGHT
 	else:
+		print(night_countdown)
 		night_countdown -= delta
 		# check when night ends
 		if night_countdown <= 0:

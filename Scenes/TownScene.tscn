@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://o1a0t2g4treg" path="res://TempSprites/testmap.png" id="1_l4qpy"]
 [ext_resource type="PackedScene" uid="uid://bfxuixl1v4a7g" path="res://Scenes/Player.tscn" id="2_jxbnx"]
-[ext_resource type="PackedScene" path="res://Scenes/Townsperson.tscn" id="3_ec2kp"]
+[ext_resource type="PackedScene" uid="uid://8qie5wxnci5f" path="res://Scenes/Townsperson.tscn" id="3_ec2kp"]
 
 [node name="TownScene" type="Node2D"]
 
