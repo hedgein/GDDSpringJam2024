@@ -1,5 +1,10 @@
 join test 1
-test (test): Hi, what brings you to town?
+- Jerry [if true == true]
+	test (test): Jimmy sucks. He always steals my fish.
+- Jimmy [if true == true]
+	test (test): Jerry is so annoying.
+- Johnny [if true == true]
+	test (test): Yo Jimmy and Johnny are both whack. 
 test (test): Thats awesome! I'm the Ultimate Fishing Wrangler here. No one can beat me in wrangling these carps from the river nearby!
 test (test): Ohpe! Them carps are calling! Gonna get wrangling!
 [end_timeline]
