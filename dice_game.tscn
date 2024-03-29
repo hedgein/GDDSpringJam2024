@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dd6gv4f2eh07s"]
+[gd_scene load_steps=5 format=3 uid="uid://dd6gv4f2eh07s"]
 
 [ext_resource type="Script" path="res://dice_game.gd" id="1_fuqlt"]
 [ext_resource type="Texture2D" uid="uid://d07gcx0xjqb1q" path="res://TempSprites/spooky_table.png" id="2_uvwdi"]
 [ext_resource type="PackedScene" uid="uid://pl31x6ff6x2c" path="res://die.tscn" id="3_3aklw"]
+[ext_resource type="Texture2D" uid="uid://epgbd2pbfjp2" path="res://TempSprites/dice_frames/die_1.png" id="4_ph0b2"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_fuqlt")
@@ -15,3 +16,79 @@ position = Vector2(100, -100)
 
 [node name="Die2" parent="." instance=ExtResource("3_3aklw")]
 position = Vector2(-100, -100)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+offset_left = 326.0
+offset_top = -330.0
+offset_right = 486.0
+offset_bottom = 150.0
+
+[node name="DieFaceList" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Die_Face" type="TextureRect" parent="HBoxContainer/DieFaceList"]
+layout_mode = 2
+texture = ExtResource("4_ph0b2")
+expand_mode = 5
+
+[node name="Die_Face2" type="TextureRect" parent="HBoxContainer/DieFaceList"]
+layout_mode = 2
+texture = ExtResource("4_ph0b2")
+expand_mode = 5
+
+[node name="Die_Face3" type="TextureRect" parent="HBoxContainer/DieFaceList"]
+layout_mode = 2
+texture = ExtResource("4_ph0b2")
+expand_mode = 5
+
+[node name="Die_Face4" type="TextureRect" parent="HBoxContainer/DieFaceList"]
+layout_mode = 2
+texture = ExtResource("4_ph0b2")
+expand_mode = 5
+
+[node name="Die_Face5" type="TextureRect" parent="HBoxContainer/DieFaceList"]
+layout_mode = 2
+texture = ExtResource("4_ph0b2")
+expand_mode = 5
+
+[node name="Die_Face6" type="TextureRect" parent="HBoxContainer/DieFaceList"]
+layout_mode = 2
+texture = ExtResource("4_ph0b2")
+expand_mode = 5
+
+[node name="DieFaceList2" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Die_Face" type="TextureRect" parent="HBoxContainer/DieFaceList2"]
+layout_mode = 2
+texture = ExtResource("4_ph0b2")
+expand_mode = 5
+
+[node name="Die_Face2" type="TextureRect" parent="HBoxContainer/DieFaceList2"]
+layout_mode = 2
+texture = ExtResource("4_ph0b2")
+expand_mode = 5
+
+[node name="Die_Face3" type="TextureRect" parent="HBoxContainer/DieFaceList2"]
+layout_mode = 2
+texture = ExtResource("4_ph0b2")
+expand_mode = 5
+
+[node name="Die_Face4" type="TextureRect" parent="HBoxContainer/DieFaceList2"]
+layout_mode = 2
+texture = ExtResource("4_ph0b2")
+expand_mode = 5
+
+[node name="Die_Face5" type="TextureRect" parent="HBoxContainer/DieFaceList2"]
+layout_mode = 2
+texture = ExtResource("4_ph0b2")
+expand_mode = 5
+
+[node name="Die_Face6" type="TextureRect" parent="HBoxContainer/DieFaceList2"]
+layout_mode = 2
+texture = ExtResource("4_ph0b2")
+expand_mode = 5
+
+[node name="Camera2D" type="Camera2D" parent="."]
