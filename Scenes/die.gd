@@ -6,6 +6,7 @@ var sprite : Sprite2D
 var die_sprites : Array
 
 var is_wicked_one : bool = false
+var is_rolling : bool = false
 
 
 # Called when the node enters the scene tree for the first time.
@@ -22,6 +23,8 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	if is_rolling:
+		roll()
 	pass
 
 func initialize(sides : Array):

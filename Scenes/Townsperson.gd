@@ -4,8 +4,8 @@ class_name Townsperson extends Node2D
 @export var x : int 
 @export var y : int
 
-@export var die_sides_a = [1,2,3,4,5,6] # each of these dice is customizable based on the person's character (their soul)
-@export var die_sides_b = [1,3,5,7,9,8]
+@export var die_sides_a = [1,1,1,1,1,1] # each of these dice is customizable based on the person's character (their soul)
+@export var die_sides_b = [7,7,8,8,9,9]
 @export var upper_bound : int # how much gold you can offer to get the max chance of playing
 @export var lower_bound : int # highest gold you can offer to still only get the min chance of playing
 @export var max_chance : float # chance they will play once you've offered upper_bound gold
