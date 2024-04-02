@@ -1,0 +1,7 @@
+fitz: What can I do for you, stranger?
+if true == true:
+	- Rumors
+		- Eliza
+		- 
+	- Goodbye
+		[end_timeline]
