@@ -1,12 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://ddsvqwt87vpdi"]
+[gd_scene load_steps=5 format=3 uid="uid://ddsvqwt87vpdi"]
 
 [ext_resource type="PackedScene" uid="uid://gmmuphfshtjp" path="res://Scenes/TownScene.tscn" id="1_4vxta"]
-[ext_resource type="PackedScene" uid="uid://b1vqyj8mh2xgd" path="res://Scenes/candle.tscn" id="2_gjr6n"]
+[ext_resource type="Script" path="res://Scenes/MainScene.gd" id="1_ur6k0"]
+[ext_resource type="PackedScene" path="res://Scenes/candle.tscn" id="2_gjr6n"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_xbrar"]
 font_size = 75
 
 [node name="RootNode" type="Node2D"]
+script = ExtResource("1_ur6k0")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
