@@ -4,7 +4,8 @@ if true == true:
 	- Rumor [if true == true]
 		beatrice: Who do you want to know about?
 		- Geppetto
-			beatrice: <Empty Text Event>
+			beatrice: The toymaker? I haven't noticed any malice from him. I do not sense an excess of treachery from him either, yet if he had to bet on something truly valuable I could see him cheat in desperation.
+			jump Beatrice_timeline/Start
 		- Fitz
 			beatrice: The casino owner? I do not align myself with such corrupt individuals. In fact, I wouldn't be surprised if he's secretly the demon I've been hunting!
 			- Why would yout think that?
@@ -16,6 +17,7 @@ if true == true:
 				beatrice: You see, I got this scar while fighting a demon. A real feisty one at that. I hate to say it, but it fooled me, and got a cheap shot in as a result. I've been chasing it ever since, and *she leans in to whisper to you* I believe that it is somewhere in this very town!
 				- How dreadful!  Am I safe?
 					beatrice: *Beatrice pats you on the head* No need to fear, as I am here! It may have tricked me before, but this time I'm prepared for it!
+					beatrice: As for Fitz, One thing I've noticed is his sin of treachery. Fitz never seems to give me a straight answer on anything. I've even see him cheat candy out of a kid! Once I catch this demon, I'm coming for Fitz next.
 			jump Beatrice_timeline/Start
 			- Goodbye
 		- Myself
