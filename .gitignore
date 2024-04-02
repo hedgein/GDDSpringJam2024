@@ -1,4 +1,7 @@
 # Godot 4+ specific ignores
 .godot/
 .DS_Store
+<<<<<<< HEAD
 *.import
+=======
+>>>>>>> 35b726da85127b250f3be41d4a1325eb08a6bb82
