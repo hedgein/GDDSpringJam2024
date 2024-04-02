@@ -30,9 +30,6 @@ var reroll_pending : bool = true # track if a reroll has been used without clear
 var doubled_down : bool = false
 var opponent_cheating : bool
 
-
-
-
 # Called when the node enters the scene tree for the first time.
 func _ready():# Replace with function body.
 	cheats_container = $CheatButtonsContainer
