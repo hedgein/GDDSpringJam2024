@@ -24,6 +24,7 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 directories/dch_directory={
 "beatrice": "res://dialogic_assets/characters/beatrice.dch",
+"eliza": "res://characters/eliza.dch",
 "fitz": "res://dialogic_assets/characters/fitz.dch",
 "gepetto": "res://dialogic_assets/characters/gepetto.dch",
 "maria": "res://dialogic_assets/characters/maria.dch",
@@ -36,6 +37,7 @@ directories/dtl_directory={
 "Beatrice_timeline": "res://Beatrice_timeline.dtl",
 "Fitz_timeline": "res://Fitz_timeline.dtl",
 "beatrice": "res://beatrice.dtl",
+"eliza": "res://timelines/eliza.dtl",
 "fitz": "res://fitz.dtl",
 "gepetto": "res://gepetto.dtl",
 "maria": "res://maria.dtl",
