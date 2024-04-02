@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://t4ho1ytoa3x7"]
+
+[ext_resource type="Script" path="res://Scenes/camera_pannign.gd" id="1_eh4ns"]
+
+[node name="FollowCamera" type="Camera2D" node_paths=PackedStringArray("player")]
+anchor_mode = 0
+zoom = Vector2(2, 2)
+script = ExtResource("1_eh4ns")
+player = NodePath("")
