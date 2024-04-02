@@ -1,0 +1,18 @@
+gepetto: Welcome to my store! How can I help you?
+if true == true:
+	label Start
+	- Rumors
+		- Nat
+			gepetto: Ah, Nat. Although I don't understand the appeal of fishing, I can respect craftsman game when I see it. I mean, it's quite a feat to create an internationally acclaimed line of fishing gear.
+			gepetto: But most importantly, he was so kind to my dear daughter in her final days. He's a truly honorable gentleman.
+			jump Start
+		- Beatrice
+			gepetto: *Geppetto furrows his brow* An inquisitor is in town? I don't like that at all.  They don't particularly like my creations, saying it is "Immoral to imitate life."
+			gepetto: I feel like they need to have some more fun in their lives! They're all so stuck-up, it's no wonder I can beat them in any bluffing game.
+			jump Start
+		- Goals
+			gepetto: My goal is to make lifelike toys for the lonely children of the world!
+			gepetto: Some people think I am too fascinated with adding realism to my toys, but I believe that children want to know more about the world, and why not give them answers through play?
+			jump Gepetto_timeline/Start
+	- Goodbye
+		[end_timeline]

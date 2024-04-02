@@ -19,19 +19,19 @@ func _ready():
 func _physics_process(delta):
 	# IF DAY: 
 	if is_day:
-		print(day_countdown)
+		#print(day_countdown)
 		day_countdown -= delta
 		# check when day ends
 		if day_countdown <= 0:
-			print("switching to night")
+			#print("switching to night")
 			is_day = false
 			day_countdown = 60.0 * day_mins
 	# IF NIGHT
 	else:
-		print(night_countdown)
+		#print(night_countdown)
 		night_countdown -= delta
 		# check when night ends
 		if night_countdown <= 0:
-			print("switching to day")
+			#print("switching to day")
 			is_day = true
 			night_countdown = 60.0 * night_mins

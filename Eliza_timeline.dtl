@@ -1,0 +1,23 @@
+eliza: Who are you? What do you want?
+if true == true:
+	label Start
+	- Rumors
+		eliza: Oh, you're here for news? Who do you want to know about?
+		- Fitz
+			eliza: You wanna about Fitz!? I can tell you about Fitz! *Eliza's left eye twitches*
+			eliza: What do you wanna know? His racketeering? The embezzlement? How he makes people dissapear? Or maybe his rampant sexism and classist actions? How he swindles immigrants into terrible contracts? The list goes on and on!
+			eliza: However, I think I finally found enough incriminating evidence to get him locked up. I got word that tonight, Maria is planning on skipping town. If I can interview her before she leaves, I'll have a direct testimony of abuse and can get that cheating f&$@ locked up like he deserves!
+			jump Start
+		- Nat
+			eliza: My cousin? Why do you want to know about that bum? All he does is fish all day so he can drink without Sandy hounding him. He's only fine because he lucked out on that product placement deal, and now he's living off of royalties for the rest of his life!
+			eliza: Meanwhile I'm out here, risking everything to weed out corruption in our society! If only I had his intuition about cheating, I'd be so much better at this. In fact, he'd be amazing at this if he actually exerted himself.
+			jump Start
+		- Geppetto
+			eliza: Mr. Geppetto? He's nice enough, but he's gotten a bit creepy after... the incident.
+			- Incident?
+				eliza: *Eliza sighes* Back when I was kid, I was best friends with Geppetto's daughter Tatum. However, Tatum got very sick in her teens. It was terminal. *Eliza sniffles*
+				eliza: Geppetto threw himself into his work, and became a renowned toymaker. However, I feel like he hasn't fully moved on. As for myself, I decided to look into it. Apparently, is was a misdiagnosis. *Eliza punches a nearby wall* SHE COULD HAVE LIVED, DAMMIT!
+				eliza: That's what inspired me to become a whistleblower. To make sure those with power are held accountable.  My advice for Geppetto is that so long as his daughter isn't brought up, he's a gentle old man. But he'll do anything to get her back.
+				jump Start
+	- Goodbye
+		[end_timeline]

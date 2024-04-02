@@ -1,7 +1,16 @@
 fitz: What can I do for you, stranger?
 if true == true:
+	label Start
 	- Rumors
 		- Eliza
-		- 
+			fitz: Ah, the reporter? She is a thorn in my side. I have a mixed opinion of Goody Two-Shoes\: they rarely cheat, but when "morals" and "ethics" come into play they just become so noisy!
+			fitz: What's worse, I can't pay her off. I'd be willing to pay a handsome sum of money to...deal with this problem.
+			fitz: Of course, you didn't hear that from me.
+			jump Fitz_timeline/Start
+		- Maria
+			fitz: Ah, Maria. She's one of our best employees. What isn't to say about her? She brings in the cusomters with her exotic beauty, and then robs them blind on the table for me.
+			fitz: However, recently she's been...off. She's more antsy, and I think she's planning something that I don't think I'll like.
+			fitz: *Fitz begins to grin wickedly* I think I'll have to talk with her tomorrow about her contract...
+			jump Fitz_timeline/Start
 	- Goodbye
 		[end_timeline]

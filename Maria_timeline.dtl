@@ -1,0 +1,26 @@
+maria: Greetings, traveler. Can I help you with something?
+if true == true:
+	label Start
+	- Rumors
+		- Fitz
+			maria: Do not talk to me about that pig!
+			maria: *Maria takes a deep breath* I apologize for my outburst. Yesterday he managed to exploit another loophole in my contract to steal my wages.
+			- Why do you need the money?
+				maria: I wish to leave this town! I was tricked by Fitz into playing a game. If I won, I'd gain fortune, but if he won, I'd be in servitude. You can see how that game went.
+				maria: Slowly I've been saving my money to buy my contract out, yet everytime I get too close, he finds a loophole to reset my progress!
+				maria: But I will no longer be held back. I plan on leaving tonight for the port city a few days away. I've finally saved enough money to buy passage back to my homeland!
+				maria: As for Fitz's habits, I've memorized all of his habits for this escape.  His secret is that he always cheats! He will never play fair, even if he came face to face with the devil itself!
+				jump Maria_timeline/Start
+		- Beatrice
+			maria: The inquisitor? I look up to her. She is strong, strong enough to face a devil and live! However, I do hold one grudge against her.
+			- What's that grudge?
+				maria: She failed to kill that devil.
+				maria: That devil went on to steal the soul of my beloved Mark, who was a regular who came from out of town. We had planned to run away to my homeland together.
+				maria: *Maria looks at the ground in sorrow* Now, I will have to start my trek alone.
+				jump Maria_timeline/Start
+		- Peppino
+			maria: Now that I am reminiscing, one of the few positive experiences I had in this town was Peppino's pizza. It's truly delicious, and I wish I could grab the recipe before I left.
+			maria: He seldom came to the casino, but when he did, he sucked. He rarely cheats, so he was always easy to beat.
+			jump Maria_timeline/Start
+	- Goodbye
+		[end_timeline]

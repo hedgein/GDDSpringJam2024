@@ -1,0 +1,19 @@
+peppino: Hello!
+if true == true:
+	label Start
+	- Rumors
+		- Nat
+			peppino: I envy the fisherman. He's so cool and collected, and has all this free time to go fishing.  Granted, I wouldn't spend my free time fishing. I'd probably golf.
+			peppino: As for dice, I've rarely played him, but I can tell he goes with the flow. However, he'll call it like he sees it, so don't cheat him!
+			jump Start
+		- Maria
+			peppino: The dancer? I don't know much about her. I know she loves my cooking, as she always pesters me for the recipe for my penne and meatball special.
+			peppino: I also know that she is a fiend at dice.  She rinses me every time we play.  Even when I tried cheating I got beat!
+			jump Peppino_timeline/Start
+		- Deals
+			peppino: Oh, you saw my deal? If you can eat an XL sized pan in 5 minutes, it's free! You even get to keep the pan! Interested?
+			- Maybe Later
+				peppino: Of course, of course. Maybe some other time.
+				jump Peppino_timeline/Start
+	- Goodbye
+		[end_timeline]
