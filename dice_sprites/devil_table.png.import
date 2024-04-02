@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
+uid="uid://y0xi5q5t7ymn"
+=======
 uid="uid://5cgwamxevb2b"
+>>>>>>> main
 path="res://.godot/imported/devil_table.png-a427d202f1d1090454f42b2d9d54db83.ctex"
 metadata={
 "vram_texture": false
