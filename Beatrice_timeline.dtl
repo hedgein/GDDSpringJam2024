@@ -1,0 +1,25 @@
+beatrice: Hello!
+label Start
+if true == true:
+	- Rumor [if true == true]
+		beatrice: Who do you want to know about?
+		- Geppetto
+			beatrice: <Empty Text Event>
+		- Fitz
+			beatrice: The casino owner? I do not align myself with such corrupt individuals. In fact, I wouldn't be surprised if he's secretly the demon I've been hunting!
+			- Why would yout think that?
+				beatrice: *Beatrice surveys the area before turning back to you* Wanna know how I got this scar?
+				- Yes
+					beatrice: *Beatrice grins maniacally* GREAT!
+				- Not particularly
+					beatrice: WELL I'M TELLING YOU ANYWAYS!
+				beatrice: You see, I got this scar while fighting a demon. A real feisty one at that. I hate to say it, but it fooled me, and got a cheap shot in as a result. I've been chasing it ever since, and *she leans in to whisper to you* I believe that it is somewhere in this very town!
+				- How dreadful!  Am I safe?
+					beatrice: *Beatrice pats you on the head* No need to fear, as I am here! It may have tricked me before, but this time I'm prepared for it!
+			jump Beatrice_timeline/Start
+			- Goodbye
+		- Myself
+			beatrice: You? You... look very familiar actually. You remind me of someone, but I can't put a finger on it.
+			jump Beatrice_timeline/Start
+	- Goodbye
+		[end_timeline]
