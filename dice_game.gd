@@ -148,8 +148,6 @@ func roll_dice(die1_active: bool = true, die2_active: bool = true):
 			lose()
 		pass
 	pass # Replace with function body.
-<<<<<<< Updated upstream
-=======
 
 func cheat(die1_active: bool = true, die2_active: bool = true):
 	if !doubled_down:
@@ -169,7 +167,6 @@ func cheat(die1_active: bool = true, die2_active: bool = true):
 				roll2 = die2.roll()
 		return
 	pass
->>>>>>> Stashed changes
 	
 func win():
 	$DebugLabel.set_text("WIN")
