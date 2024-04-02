@@ -58,6 +58,11 @@ func _ready():# Replace with function body.
 		# this will allow for Low Roller to be toggled on and off correctly
 		max_map1.push_back(int(die1.sides[i] == max_value))
 		max_map2.push_back(int(die2.sides[i] == max_value))
+	# roll chance that opponent is somehow cheating
+	var rng = RandomNumberGenerator.new()
+	rng.randomize()
+	if rng.randf_range(0,1) <= opponent.cheats:
+		opponent_cheating = true
 	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -136,6 +141,8 @@ func roll_dice(die1_active: bool = true, die2_active: bool = true):
 		roll1 = die1.roll()
 	if die2_active:
 		roll2 = die2.roll()
+	if opponent_cheating:
+		cheat(die1_active, die2_active)
 	if (roll1 + roll2 < 7) or (wicked_one_active and (roll1 == 1 or roll2 == 1)):
 		win()
 		return
@@ -148,6 +155,20 @@ func roll_dice(die1_active: bool = true, die2_active: bool = true):
 			lose()
 		pass
 	pass # Replace with function body.
+
+func cheat(die1_active: bool = true, die2_active: bool = true):
+	if !doubled_down:
+		# the first time, opponent is guaranteed to win
+		while (roll1 + roll2 < 7) or (wicked_one_active and (roll1 == 1 or roll2 == 1)):
+			if die1_active:
+				roll1 = die1.roll()
+			if die2_active:
+				roll2 = die2.roll()
+		return
+	else:
+		# the second time, opponent is guaranteed to lose
+		
+	pass
 	
 func win():
 	$DebugLabel.set_text("WIN")
