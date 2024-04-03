@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://dceiwmsv0c5uw"]
+[gd_scene load_steps=2 format=3 uid="uid://vvajg4jph2de"]
 
-[ext_resource type="Texture2D" uid="uid://brveq8s6sw31w" path="res://dice_sprites/devil_table.png" id="1_lftdy"]
+[ext_resource type="Texture2D" uid="uid://c1gfyy858wy78" path="res://dice_sprites/devil_table.png" id="1_lftdy"]
 
 [node name="ScreenCredits" type="Node2D"]
 

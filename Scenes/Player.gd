@@ -6,6 +6,7 @@ var is_talking = false
 var devil_sprite
 
 func talk():
+	Global.check_timeout = false
 	var people = get_tree().get_nodes_in_group("Townspeople")
 	var closest_person : Node2D
 	var min_distance : int = 101
@@ -27,6 +28,7 @@ func get_input():
 		talk()
 		
 func _on_timeline_ended():
+	Global.check_timeout = true
 	is_talking = false
 		
 func _ready():
