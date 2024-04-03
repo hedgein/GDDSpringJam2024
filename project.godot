@@ -40,6 +40,8 @@ directories/dtl_directory={
 "Fitz_Night_timeline": "res://Fitz_Night_timeline.dtl",
 "Fitz_timeline": "res://Fitz_timeline.dtl",
 "Gepetto_timeline": "res://Gepetto_timeline.dtl",
+"Geppetto_Defeat_timeline": "res://Geppetto_Defeat_timeline.dtl",
+"Geppetto_Night_timeline": "res://Geppetto_Night_timeline.dtl",
 "Maria_Defeat_timeline": "res://Maria_Defeat_timeline.dtl",
 "Maria_Night_timeline": "res://Maria_Night_timeline.dtl",
 "Maria_timeline": "res://Maria_timeline.dtl",
