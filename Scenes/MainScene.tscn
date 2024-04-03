@@ -1,8 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://ddsvqwt87vpdi"]
+[gd_scene load_steps=3 format=3 uid="uid://ddsvqwt87vpdi"]
 
-[ext_resource type="PackedScene" uid="uid://gmmuphfshtjp" path="res://Scenes/TownScene.tscn" id="1_4vxta"]
 [ext_resource type="Script" path="res://Scenes/MainScene.gd" id="1_ur6k0"]
-[ext_resource type="PackedScene" uid="uid://b1vqyj8mh2xgd" path="res://Scenes/candle.tscn" id="2_gjr6n"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_xbrar"]
 font_size = 75
@@ -22,34 +20,6 @@ offset_bottom = 23.0
 grow_horizontal = 2
 text = "Art of the Deal"
 label_settings = SubResource("LabelSettings_xbrar")
-
-[node name="TextureProgressBar" parent="CanvasLayer" instance=ExtResource("2_gjr6n")]
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_top = -300.0
-offset_bottom = 0.0
-grow_vertical = 0
-
-[node name="GoldLabel" type="Label" parent="CanvasLayer"]
-offset_left = 1044.0
-offset_top = 7.0
-offset_right = 1152.0
-offset_bottom = 30.0
-theme_override_colors/font_color = Color(0.972549, 0.866667, 0, 1)
-text = "GOLD: 60000"
-
-[node name="SoulsLabel" type="Label" parent="CanvasLayer"]
-offset_left = 1038.0
-offset_top = 28.0
-offset_right = 1140.0
-offset_bottom = 51.0
-theme_override_colors/font_color = Color(0.337255, 1, 0.980392, 1)
-text = "SOULS: 0
-"
-
-[node name="TownScene" parent="." instance=ExtResource("1_4vxta")]
-visible = false
 
 [node name="Camera2D" type="Camera2D" parent="."]
 visible = false
