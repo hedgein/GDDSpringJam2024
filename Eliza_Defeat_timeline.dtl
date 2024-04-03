@@ -1,0 +1,9 @@
+eliza: Well, I risked it all and lost.
+test (test): Yep. You lost your story and the chance to share it.
+eliza: *Eliza looks at you in dismay* Is that it? Is Fitz bound to be left unpunished?
+test (test): No. The truth always comes to light. You were not the first to go after Fitz, and you won't be the last.
+eliza: It isn't much, but here, take my evidence. I know that a devil like you doesn't care, but please, hide it somewhere Fitz can't find it.
+test (test): I'll see what I can do.
+*As you collect Eliza's soul, you look at the evidence Eliza had collected. You then burn it with hellfire.*
+set {isElizaDead} = true
+*Got Eliza's soul!*

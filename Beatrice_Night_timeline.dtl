@@ -1,0 +1,19 @@
+if {isBeatriceDead} == false:
+	beatrice: DEVILLLLLL! WE MEET AGAIN!
+	- Game
+		test (test): So, we meet again, young Beatrice.
+		test (test): Shall we play our game again?
+		beatrice: No, I won't fall to your cheating antics this time! *She brandishes a sword*
+		test (test): Woah Woah Woah Woah! Let me remind you that if I die, all the souls I've collected go with me! In order to free all who have lost to me, you HAVE to beat me in a game of chance.
+		beatrice: *Beatrice screams in frustration and begins to walk towards you. Menacingly!*
+		test (test): Oh? You're approaching me? Instead of running away you're approaching me?
+		beatrice: I can't beat the crap out of you in your own game without getting closer.
+		test (test): OH HOH HOH! Then please, approach all you like!
+		[signal arg="gameStart"]
+		[end_timeline]
+	- Goodbye
+		test (test): No! I'll deal with you later. *You run away*
+		[end_timeline]
+else:
+	beatrice: ...
+	[end_timeline]
