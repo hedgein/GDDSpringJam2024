@@ -1,0 +1,6 @@
+nat: Man, I should've challenged you to a fishing competition.
+test (test): Unfortunately, that's what happens when you play the Devil's game. Now, pay up!
+nat: *Nat looks to the night sky* Eliza, I hope you make it out of this town alive...
+*Got Nat's soul!*
+set {isNatDead} = true
+[end_timeline]

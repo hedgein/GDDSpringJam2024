@@ -3,8 +3,13 @@
 [ext_resource type="Script" path="res://Scenes/Townsperson.gd" id="1_pxcli"]
 [ext_resource type="Texture2D" uid="uid://cu4uni7d2gbcs" path="res://TempSprites/human.png" id="2_uudsl"]
 
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_adjbc"]
 size = Vector2(62, 39)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0afng"]
+size = Vector2(16, 32)
+
 
 [node name="Townsperson" type="Node2D" groups=["Townspeople"]]
 script = ExtResource("1_pxcli")
@@ -12,8 +17,16 @@ script = ExtResource("1_pxcli")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_uudsl")
 
-[node name="RigidBody2D" type="RigidBody2D" parent="."]
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
 position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_adjbc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+texture_filter = 1
+position = Vector2(0, 8)
+shape = SubResource("RectangleShape2D_0afng")
+one_way_collision_margin = 0.0
+

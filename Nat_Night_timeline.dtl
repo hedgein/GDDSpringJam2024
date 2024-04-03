@@ -1,0 +1,17 @@
+if {isNatDead} == false:
+	nat: Wow. A living demon! I think I had a dream about this.
+	- Game
+		You want me to play against you?
+		test (test): That is my goal, yes. You play me for whatever you desire, and you wager your soul.
+		nat: But there's nothing you could give me that I either already have or can obtain.
+		test (test): *As a desire-based entity, you know this to be true* You might not, but what about those around you? You cousin Eliza, maybe?
+		nat: Now you stay away from my cousin!
+		test (test): It's not me you have to worry about Nat. It's Fitz. He's hired a hitman to get rid of Eliza before she can get her story to the news. She got in too deep.
+		nat: No... *Nat looks at the ground, distraught* If I win your game, will you ensure Eliza's safety?
+		test (test): You have my word.
+		nat: Then lets get to it.
+		[signal arg="gameStart"]
+	- Goodbye
+		[end_timeline]
+else:
+	nat: ...

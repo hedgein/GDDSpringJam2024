@@ -12,10 +12,11 @@ func talk():
 		var d = position.distance_to(person.position)
 		if d < min_distance:
 			closest_person = person
+			min_distance = d
 	if closest_person != null:
 		is_talking = true
-		print(closest_person.person_name, closest_person)
-		Dialogic.start("test_timeline")
+		#print(closest_person.person_name, closest_person)
+		Dialogic.start(closest_person.person_name)
 	
 
 func get_input():
