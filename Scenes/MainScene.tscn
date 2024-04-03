@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://ddsvqwt87vpdi"]
 
 [ext_resource type="Script" path="res://Scenes/MainScene.gd" id="1_ur6k0"]
-[ext_resource type="Texture2D" uid="uid://c1gfyy858wy78" path="res://dice_sprites/devil_table.png" id="2_yq2dd"]
+[ext_resource type="Texture2D" uid="uid://bap1g34oe7dih" path="res://dice_sprites/devil_table.png" id="2_yq2dd"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_xbrar"]
 font_size = 75

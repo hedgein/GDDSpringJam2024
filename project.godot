@@ -18,8 +18,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 Global="*res://global.gd"
-Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 BgMusic="*res://Scenes/bgMusic.tscn"
+Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
 
