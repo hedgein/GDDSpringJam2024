@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 Global="*res://global.gd"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
+BgMusic="*res://Scenes/bgMusic.tscn"
 
 [dialogic]
 
