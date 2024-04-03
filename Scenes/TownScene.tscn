@@ -1,14 +1,17 @@
 [gd_scene load_steps=16 format=3 uid="uid://gmmuphfshtjp"]
 
-[ext_resource type="Texture2D" uid="uid://co2bklyak01l5" path="res://samirah_sprites/devil_game_tileset_walls.png" id="1_6607e"]
+[ext_resource type="Texture2D" uid="uid://sk4wfuerg7gt" path="res://samirah_sprites/devil_game_tileset_walls.png" id="1_6607e"]
 [ext_resource type="Texture2D" uid="uid://o1a0t2g4treg" path="res://TempSprites/testmap.png" id="1_l4qpy"]
 [ext_resource type="PackedScene" uid="uid://bfxuixl1v4a7g" path="res://Scenes/Player.tscn" id="2_jxbnx"]
 [ext_resource type="PackedScene" uid="uid://8qie5wxnci5f" path="res://Scenes/Townsperson.tscn" id="3_ec2kp"]
+<<<<<<< HEAD
 [ext_resource type="Texture2D" uid="uid://cticm8s3tuw00" path="res://samirah_sprites/devil_game_tileset_door.png" id="4_80cub"]
 [ext_resource type="Texture2D" uid="uid://dtvc5kjqjj00w" path="res://samirah_sprites/devil_game_tileset_livegrass.png" id="4_icaki"]
 [ext_resource type="Texture2D" uid="uid://b5glt10vayno0" path="res://samirah_sprites/devil_game_tileset_dirtpath.png" id="5_4garg"]
 [ext_resource type="Texture2D" uid="uid://dsfk2nu58f3er" path="res://samirah_sprites/devil_game_tileset_roof.png" id="5_l087w"]
 [ext_resource type="PackedScene" uid="uid://t4ho1ytoa3x7" path="res://Scenes/follow_camera.tscn" id="6_y58m3"]
+=======
+>>>>>>> 8faa3dc6e5d647cfd3b935c6a17142b5826d2329
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_14d7a"]
 texture = ExtResource("1_6607e")
