@@ -5,7 +5,7 @@ var roll_button : Button
 var reroll_container : HBoxContainer
 var ddown_container : HBoxContainer
 
-var opponent : Townsperson = Global.talking_to
+var opponent : Townsperson
 var die1 : Die
 var die2 : Die
 
@@ -35,6 +35,7 @@ var cheats_active : int = 0 # used to calculate cheat costs
 
 # Called when the node enters the scene tree for the first time.
 func _ready():# Replace with function body.
+	opponent = Global.talking_to
 	cheats_container = $CheatButtonsContainer
 	reroll_container = $RerollButtonsContainer
 	ddown_container = $DoubleDownContainer

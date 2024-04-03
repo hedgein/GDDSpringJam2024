@@ -16,7 +16,7 @@ func talk():
 			closest_person = person
 			min_distance = d
 	if closest_person != null:
-		Global.talking_to = closest_person
+		Global.talking_to = closest_person.duplicate()
 		is_talking = true
 		#print(closest_person.person_name, closest_person)
 		Dialogic.start(closest_person.person_name)

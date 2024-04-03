@@ -10,7 +10,7 @@ var check_timeout = false # make comparisons to see if time has run out (set to 
 # note that the time still runs
 var fast_time = false # if time is running faster, when player is in debt
 
-var talking_to : Townsperson = Townsperson.new()
+var talking_to : Townsperson
 
 var is_day = true
 
@@ -45,9 +45,7 @@ func _physics_process(delta):
 		# check when night ends
 		if night_countdown <= 0 and check_timeout:
 			#print("switching to day")
-			#get_tree().change_scene_to_file("res://Scenes/TownScene.tscn")
-			is_day = true
-			night_countdown = 60.0 * night_mins
+			get_tree().change_scene_to_file("res://Scenes/screen_credits.tscn")
 			
 		if BgMusic.stream.resource_path.get_file().get_basename() == "bgHuman":
 			BgMusic.stop()
