@@ -23,4 +23,3 @@ label_settings = SubResource("LabelSettings_xbrar")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 visible = false
-zoom = Vector2(2, 2)

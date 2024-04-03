@@ -1,0 +1,63 @@
+[gd_scene load_steps=2 format=3 uid="uid://dceiwmsv0c5uw"]
+
+[ext_resource type="Texture2D" uid="uid://brveq8s6sw31w" path="res://dice_sprites/devil_table.png" id="1_lftdy"]
+
+[node name="ScreenCredits" type="Node2D"]
+
+[node name="DevilTable" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -20)
+scale = Vector2(2.4, 2.4)
+texture = ExtResource("1_lftdy")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="programmers" type="Label" parent="CanvasLayer"]
+texture_filter = 1
+anchors_preset = -1
+anchor_right = 0.5
+anchor_bottom = 0.506
+offset_left = 288.0
+offset_top = 80.0
+offset_right = -104.0
+offset_bottom = -159.888
+text = "Programmers:
+Lucas Smith (SmithyLK)
+Jessica So (hedge_in)"
+
+[node name="music" type="Label" parent="CanvasLayer"]
+offset_left = 288.0
+offset_top = 192.0
+offset_right = 499.0
+offset_bottom = 241.0
+text = "Music:
+Alex Schrader (Soranohato)"
+
+[node name="pm" type="Label" parent="CanvasLayer"]
+offset_left = 568.0
+offset_top = 80.0
+offset_right = 720.0
+offset_bottom = 144.0
+text = "Project Manager:
+Luna"
+
+[node name="art" type="Label" parent="CanvasLayer"]
+offset_left = 568.0
+offset_top = 192.0
+offset_right = 728.0
+offset_bottom = 267.0
+text = "Artists:
+azulred
+Jessica So (hedge_in)"
+
+[node name="thankyou" type="Label" parent="CanvasLayer"]
+offset_left = 776.0
+offset_top = 112.0
+offset_right = 961.0
+offset_bottom = 232.0
+text = "Made for UW-Madison's 
+GDD 2024 Spring Jam.
+
+Thank you for playing!"
+
+[node name="Camera2D" type="Camera2D" parent="."]
