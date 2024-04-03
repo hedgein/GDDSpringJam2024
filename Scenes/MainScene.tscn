@@ -2,12 +2,13 @@
 
 [ext_resource type="PackedScene" uid="uid://gmmuphfshtjp" path="res://Scenes/TownScene.tscn" id="1_4vxta"]
 [ext_resource type="Script" path="res://Scenes/MainScene.gd" id="1_ur6k0"]
-[ext_resource type="PackedScene" path="res://Scenes/candle.tscn" id="2_gjr6n"]
+[ext_resource type="PackedScene" uid="uid://b1vqyj8mh2xgd" path="res://Scenes/candle.tscn" id="2_gjr6n"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_xbrar"]
 font_size = 75
 
 [node name="RootNode" type="Node2D"]
+visible = false
 script = ExtResource("1_ur6k0")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -23,9 +24,15 @@ grow_horizontal = 2
 text = "Art of the Deal"
 label_settings = SubResource("LabelSettings_xbrar")
 
+[node name="TextureProgressBar" parent="CanvasLayer" instance=ExtResource("2_gjr6n")]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -300.0
+offset_bottom = 0.0
+grow_vertical = 0
+
 [node name="TownScene" parent="." instance=ExtResource("1_4vxta")]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2, 2)
-
-[node name="TextureProgressBar" parent="." instance=ExtResource("2_gjr6n")]
