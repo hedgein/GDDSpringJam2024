@@ -1,0 +1,10 @@
+beatrice: Why? Why do you cheat?
+test (test): Why don't you!?
+beatrice: Because it is wrong!
+test (test): Beatrice, your life, nay, your soul was on the damn line! And yet, you never cheated.
+test (test): And honestly, I respect you for it.
+beatrice: I don't give a f&#@. Just take my soul and get this over with. But let it be known that I will not be last inquisitor you fight. Eventually, you will meet your match, and I will be there, laughing.
+test (test): I'll hold you to that.
+set {isBeatriceDead} = true
+*Got Beatrice's Soul!*
+[end_timeline]
