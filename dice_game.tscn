@@ -181,6 +181,7 @@ offset_right = 40.0
 offset_bottom = 23.0
 
 [node name="DebugReloadScene" type="Button" parent="."]
+visible = false
 offset_left = 348.0
 offset_top = 218.0
 offset_right = 481.0
