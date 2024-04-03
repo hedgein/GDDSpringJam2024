@@ -36,6 +36,7 @@ directories/dch_directory={
 directories/dtl_directory={
 "Beatrice_timeline": "res://Beatrice_timeline.dtl",
 "Eliza_timeline": "res://Eliza_timeline.dtl",
+"Fitz_Night_timeline": "res://Fitz_Night_timeline.dtl",
 "Fitz_timeline": "res://Fitz_timeline.dtl",
 "Gepetto_timeline": "res://Gepetto_timeline.dtl",
 "Maria_timeline": "res://Maria_timeline.dtl",

@@ -1,0 +1,13 @@
+fitz: Hello.
+if true == true:
+	- Game
+		test (test): I hear that you're quite the gambler.
+		fitz: Well of course. When you own a casino, one must be prepared to play.
+		test (test): How about a wager then? A game of dice.
+		fitz: If I win?
+		test (test): I make all your problems disappear.
+		fitz: *Fitz looks intrigued* and if you win?
+		test (test): I get your soul.
+		fitz: *Fitz laughes* My soul? That's worth nothing! I'll take you up on your dice game, demon.
+	- Goodbye
+		[end_timeline]
