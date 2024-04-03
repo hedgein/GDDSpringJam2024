@@ -1,0 +1,19 @@
+if {isGeppettoDead} == false:
+	gepetto: Back, demon! I shall be taken this night!
+	- Game
+		gepetto: I will not play games with you, devil! And nothing you could offer me would change my mind.
+		test (test): Not even...your daughter?
+		gepetto: Leave her out of this!
+		test (test): You could give her the life she never had.
+		gepetto: Maybe I could. But that doesn't mean that I should.
+		test (test): Oh please, don't act moral with me! I know what you've been doing. Your...experiments.
+		gepetto: So what? I am trying to make life, not bring it back from the dead.
+		test (test): Geppetto, you are making an imitation at best, and a sad excuse of life at worst. Let's change my proposal. I'll give you your daughter's soul, and teach you how to infuse it into your automaton.  If you lose, I get your soul.
+		gepetto: ... would it be her? Truly her? No tricks?
+		test (test): *Your sympathetic attitude drops as a grin forms on your face* You have my word. Let the game begin!
+		[signal arg="gameStart"]
+	- Goodbye
+		[end_timeline]
+else:
+	gepetto: ...
+	[end_timeline]

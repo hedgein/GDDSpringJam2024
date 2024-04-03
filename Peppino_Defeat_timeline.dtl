@@ -1,0 +1,7 @@
+peppino: Drat! Oh well, I lost. What did I owe you?
+test (test): Your soul.
+peppino: You didn't tell me that!
+test (test): You didn't give me the chance to tell you! Now pay the consequences!
+set {isPeppinoDead} = true
+test (test): Some people go through life too fast. If they only slowed down they would be able to save themselves from so much trouble.
+[end_timeline]
