@@ -34,6 +34,8 @@ directories/dch_directory={
 "test": "res://dialogic_assets/test.dch"
 }
 directories/dtl_directory={
+"Beatrice_Defeat_timeline": "res://Beatrice_Defeat_timeline.dtl",
+"Beatrice_Night_timeline": "res://Beatrice_Night_timeline.dtl",
 "Beatrice_timeline": "res://Beatrice_timeline.dtl",
 "Eliza_Defeat_timeline": "res://Eliza_Defeat_timeline.dtl",
 "Eliza_Night_timeline": "res://Eliza_Night_timeline.dtl",
