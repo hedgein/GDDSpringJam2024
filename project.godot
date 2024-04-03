@@ -44,7 +44,6 @@ directories/dtl_directory={
 "Maria_timeline": "res://Maria_timeline.dtl",
 "Nat_timeline": "res://Nat_timeline.dtl",
 "Peppino_timeline": "res://Peppino_timeline.dtl",
-"beatrice": "res://beatrice.dtl",
 "eliza": "res://timelines/eliza.dtl",
 "fitz": "res://fitz.dtl",
 "gepetto": "res://gepetto.dtl",

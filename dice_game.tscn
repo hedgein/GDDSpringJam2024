@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://dd6gv4f2eh07s"]
 
 [ext_resource type="Script" path="res://dice_game.gd" id="1_fuqlt"]
-[ext_resource type="Texture2D" uid="uid://c1gfyy858wy78" path="res://dice_sprites/devil_table.png" id="2_giuvq"]
+[ext_resource type="Texture2D" uid="uid://brveq8s6sw31w" path="res://dice_sprites/devil_table.png" id="2_giuvq"]
 [ext_resource type="PackedScene" uid="uid://pl31x6ff6x2c" path="res://die.tscn" id="3_3aklw"]
-[ext_resource type="Texture2D" uid="uid://k0qbdsxrhvb6" path="res://dice_sprites/dice_labels/2.png" id="4_crpo8"]
+[ext_resource type="Texture2D" uid="uid://nabaa0bqcijf" path="res://dice_sprites/dice_labels/2.png" id="4_crpo8"]
 [ext_resource type="PackedScene" uid="uid://ok0xl53lrqw5" path="res://UI.tscn" id="5_hgxpx"]
 
 [node name="Node2D" type="Node2D"]

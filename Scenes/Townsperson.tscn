@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://Scenes/Townsperson.gd" id="1_pxcli"]
 [ext_resource type="Texture2D" uid="uid://diypecgsia4oa" path="res://samirah_sprites/devil_game_npc_beatrice_sprite_sheet.png" id="2_gp6pg"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_adjbc"]
-size = Vector2(16, 16)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0afng"]
+size = Vector2(16, 32)
 
 [node name="Townsperson" type="Node2D" groups=["Townspeople"]]
 script = ExtResource("1_pxcli")
@@ -16,8 +16,10 @@ texture = ExtResource("2_gp6pg")
 hframes = 2
 vframes = 2
 
-[node name="RigidBody2D" type="RigidBody2D" parent="."]
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 texture_filter = 1
-shape = SubResource("RectangleShape2D_adjbc")
+position = Vector2(0, 8)
+shape = SubResource("RectangleShape2D_0afng")
+one_way_collision_margin = 0.0
