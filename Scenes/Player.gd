@@ -6,6 +6,7 @@ var is_talking = false
 var devil_sprite
 
 func talk():
+	Global.check_timeout = false
 	var people = get_tree().get_nodes_in_group("Townspeople")
 	var closest_person : Node2D
 	var min_distance : int = 101
@@ -15,9 +16,11 @@ func talk():
 			closest_person = person
 			min_distance = d
 	if closest_person != null:
+		Global.talking_to = closest_person.duplicate()
 		is_talking = true
 		#print(closest_person.person_name, closest_person)
 		Dialogic.start(closest_person.person_name)
+
 	
 
 func get_input():
@@ -27,10 +30,12 @@ func get_input():
 		talk()
 		
 func _on_timeline_ended():
+	Global.check_timeout = true
 	is_talking = false
 		
 func _ready():
 	Dialogic.timeline_ended.connect(_on_timeline_ended)
+	Dialogic.signal_event.connect(DialogicSignal)
 	devil_sprite = preload("res://samirah_sprites/devil_game_player_devil_sprite_sheet.png")
 
 func _physics_process(delta):
@@ -40,4 +45,6 @@ func _physics_process(delta):
 	if !Global.is_day:
 		$Sprite2D.texture = devil_sprite
 		
-
+func DialogicSignal(argument:String):
+	if argument == "gameStart":
+		get_tree().change_scene_to_file("res://dice_game.tscn")

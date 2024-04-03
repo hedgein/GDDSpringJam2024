@@ -1,21 +1,15 @@
-[gd_scene load_steps=23 format=3 uid="uid://gmmuphfshtjp"]
+[gd_scene load_steps=17 format=3 uid="uid://brhf3id8ddji3"]
 
-[ext_resource type="Texture2D" uid="uid://co2bklyak01l5" path="res://samirah_sprites/devil_game_tileset_walls.png" id="1_6607e"]
+[ext_resource type="Texture2D" uid="uid://sk4wfuerg7gt" path="res://samirah_sprites/devil_game_tileset_walls.png" id="1_6607e"]
+[ext_resource type="Texture2D" uid="uid://o1a0t2g4treg" path="res://TempSprites/testmap.png" id="1_l4qpy"]
 [ext_resource type="PackedScene" uid="uid://bfxuixl1v4a7g" path="res://Scenes/Player.tscn" id="2_jxbnx"]
 [ext_resource type="PackedScene" uid="uid://8qie5wxnci5f" path="res://Scenes/Townsperson.tscn" id="3_ec2kp"]
-[ext_resource type="Texture2D" uid="uid://dtvc5kjqjj00w" path="res://samirah_sprites/devil_game_tileset_livegrass.png" id="4_icaki"]
-[ext_resource type="Texture2D" uid="uid://cticm8s3tuw00" path="res://samirah_sprites/devil_game_tileset_door.png" id="4_n56rp"]
-[ext_resource type="Texture2D" uid="uid://b5glt10vayno0" path="res://samirah_sprites/devil_game_tileset_dirtpath.png" id="5_4garg"]
-[ext_resource type="Texture2D" uid="uid://dsfk2nu58f3er" path="res://samirah_sprites/devil_game_tileset_roof.png" id="5_5nlpm"]
-[ext_resource type="PackedScene" uid="uid://t4ho1ytoa3x7" path="res://Scenes/follow_camera.tscn" id="6_y58m3"]
-[ext_resource type="Texture2D" uid="uid://diypecgsia4oa" path="res://samirah_sprites/devil_game_npc_beatrice_sprite_sheet.png" id="9_6mlnp"]
-[ext_resource type="Texture2D" uid="uid://bkdnakxbx85aq" path="res://samirah_sprites/devil_game_npc_eliza_sprite_sheet.png" id="9_d3nve"]
-[ext_resource type="Texture2D" uid="uid://cdb147a2wk4vn" path="res://samirah_sprites/devil_game_npc_fitz_sprite_sheet.png" id="10_ud2af"]
+[ext_resource type="Texture2D" uid="uid://ck0lq4vn8h0gh" path="res://samirah_sprites/devil_game_tileset_livegrass.png" id="4_icaki"]
+[ext_resource type="Texture2D" uid="uid://64snggdahbdw" path="res://samirah_sprites/devil_game_tileset_door.png" id="4_n56rp"]
+[ext_resource type="Texture2D" uid="uid://bmfoaxg0oou28" path="res://samirah_sprites/devil_game_tileset_dirtpath.png" id="5_4garg"]
+[ext_resource type="Texture2D" uid="uid://h28saecb46om" path="res://samirah_sprites/devil_game_tileset_roof.png" id="5_5nlpm"]
+[ext_resource type="PackedScene" path="res://Scenes/follow_camera.tscn" id="6_y58m3"]
 [ext_resource type="PackedScene" uid="uid://ok0xl53lrqw5" path="res://UI.tscn" id="10_xcdkv"]
-[ext_resource type="Texture2D" uid="uid://dch6ui3jujegp" path="res://samirah_sprites/devil_game_npc_geppetto_sprite_sheet.png" id="11_4jrkd"]
-[ext_resource type="Texture2D" uid="uid://8u6xg3o5d2wd" path="res://samirah_sprites/devil_game_npc_luigi_sprite_sheet.png" id="12_45dql"]
-[ext_resource type="Texture2D" uid="uid://5fus45pofhbo" path="res://samirah_sprites/devil_game_npc_nat_sprite_sheet.png" id="13_1wo0q"]
-[ext_resource type="Texture2D" uid="uid://fbobu4fvkgqx" path="res://samirah_sprites/devil_game_npc_maria_day_sprite_sheet.png" id="14_hbvup"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_14d7a"]
 texture = ExtResource("1_6607e")
@@ -133,43 +127,24 @@ layer_3/name = "AirObjects"
 layer_3/z_index = 9
 layer_3/tile_data = PackedInt32Array(524308, 4, 0, 524309, 4, 0, 524310, 4, 0, 524311, 4, 1, 524307, 65540, 1342177280, 1966087, 65539, 1, 2031623, 65539, 2, 1966101, 65539, 1, 2031637, 65539, 2, 1245205, 65539, 1, 1310741, 65539, 2, 1245191, 65539, 1, 1310727, 65539, 2, 655367, 65539, 1, 720903, 65539, 2, 655381, 65539, 1, 720917, 65539, 2, 1835028, 4, 0, 1835029, 4, 0, 1835030, 4, 0, 1835014, 4, 0, 1835015, 4, 0, 1835016, 4, 0, 1114118, 4, 0, 1114119, 4, 0, 1114120, 4, 0, 524294, 4, 0, 524295, 4, 0, 524296, 4, 0, 917540, 4, 0, 524333, 4, 0, 1114157, 4, 0, 1835053, 4, 0, 1835063, 4, 0, 1114167, 4, 0, 524343, 4, 0, 1835031, 4, 1, 1835027, 4, 268435457, 1835052, 4, 268435457, 1114156, 4, 268435457, 524332, 4, 268435457, 917539, 4, 268435457, 1114132, 4, 0, 1114133, 4, 0, 1114134, 4, 0, 1114135, 4, 1, 1114131, 4, 268435457, 1114117, 4, 268435457, 524293, 4, 268435457, 1835013, 4, 268435457, 1114166, 4, 268435457, 1835062, 4, 268435457, 524342, 4, 268435457, 1835054, 4, 1, 1835064, 4, 1, 1114168, 4, 1, 524344, 4, 1, 524334, 4, 1, 917541, 4, 1, 1114121, 4, 1, 524297, 4, 1, 1835017, 4, 1, 1114158, 4, 1)
 
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("1_l4qpy")
+
 [node name="Player" parent="." instance=ExtResource("2_jxbnx")]
 position = Vector2(348.201, 104.317)
 
 [node name="Townsperson" parent="." instance=ExtResource("3_ec2kp")]
-position = Vector2(1216, 136)
-person_name = "Beatrice_timeline"
-sprite = ExtResource("9_6mlnp")
+visible = false
+person_name = "Abby"
 
 [node name="Townsperson2" parent="." instance=ExtResource("3_ec2kp")]
-position = Vector2(336, 368)
-person_name = "Eliza_timeline"
-sprite = ExtResource("9_d3nve")
+visible = false
+person_name = "Bobby"
 
 [node name="Townsperson3" parent="." instance=ExtResource("3_ec2kp")]
-position = Vector2(1192, 552)
-person_name = "Fitz_timeline"
-sprite = ExtResource("10_ud2af")
-
-[node name="Townsperson4" parent="." instance=ExtResource("3_ec2kp")]
-position = Vector2(744, 320)
-person_name = "Gepetto_timeline"
-sprite = ExtResource("11_4jrkd")
-
-[node name="Townsperson5" parent="." instance=ExtResource("3_ec2kp")]
-position = Vector2(1112, 824)
-person_name = "Peppino_timeline"
-sprite = ExtResource("12_45dql")
-
-[node name="Townsperson6" parent="." instance=ExtResource("3_ec2kp")]
-position = Vector2(256, 888)
-person_name = "Nat_timeline"
-sprite = ExtResource("13_1wo0q")
-
-[node name="Townsperson7" parent="." instance=ExtResource("3_ec2kp")]
-position = Vector2(776, 856)
-person_name = "Maria_timeline"
-sprite = ExtResource("14_hbvup")
+visible = false
+person_name = "Callie"
 
 [node name="FollowCamera" parent="." node_paths=PackedStringArray("player", "tilemap") instance=ExtResource("6_y58m3")]
 limit_left = 0

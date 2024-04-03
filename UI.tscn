@@ -32,6 +32,7 @@ text = "SOULS: 0
 "
 
 [node name="Button" type="Button" parent="."]
+visible = false
 offset_right = 8.0
 offset_bottom = 8.0
 text = "[DEBUG] Set to 5 seconds left"
