@@ -33,11 +33,8 @@ var opponent_cheating : bool
 var pot : int = 20000 # gold to be won
 var cheats_active : int = 0 # used to calculate cheat costs
 
-var gold_label : Label
-
 # Called when the node enters the scene tree for the first time.
 func _ready():# Replace with function body.
-	gold_label = $GoldLabel
 	cheats_container = $CheatButtonsContainer
 	reroll_container = $RerollButtonsContainer
 	ddown_container = $DoubleDownContainer
@@ -70,7 +67,6 @@ func _ready():# Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	gold_label.text = str(Global.gold)
 	pass
 
 func update_die_lists():
