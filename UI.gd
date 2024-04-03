@@ -14,3 +14,11 @@ func _process(delta):
 	gold_label.text = "GOLD: " + str(Global.gold)
 	souls_label.text = "SOULS: " + str(Global.souls)
 	pass
+
+
+func _on_button_pressed():
+	if Global.is_day:	
+		Global.day_countdown = 5
+	else:
+		Global.night_countdown = 5
+	pass # Replace with function body.
