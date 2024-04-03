@@ -29,6 +29,7 @@ func _physics_process(delta):
 		# check when day ends
 		if day_countdown <= 0 and check_timeout:
 			#print("switching to night")
+			get_tree().change_scene_to_file("res://Scenes/NightScene.tscn")
 			is_day = false
 			day_countdown = 60.0 * day_mins
 	# IF NIGHT
@@ -38,5 +39,6 @@ func _physics_process(delta):
 		# check when night ends
 		if night_countdown <= 0 and check_timeout:
 			#print("switching to day")
+			#get_tree().change_scene_to_file("res://Scenes/TownScene.tscn")
 			is_day = true
 			night_countdown = 60.0 * night_mins

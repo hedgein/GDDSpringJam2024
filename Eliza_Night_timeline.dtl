@@ -1,0 +1,22 @@
+if {isElizaDead} == false:
+	eliza: Oh my God Fitz summoned a demon to kill me.
+	- Game
+		test (test): Fortunately for you, Fitz did not hire me. Unfortunately for you, he did hire someone else, and he has orders to kill you tonight.
+		eliza: Wait, Fitz is gonna have me killed? Oh I've should've seen this happen! How will I get my story to the press now?
+		test (test): That's where I come in. Play a game with me. If you win, Everyone in the world will know of Fitz's wrongdoing.
+		eliza: And what happens if I lose?
+		test (test): I get your soul.
+		eliza: I'm not sure...
+		test (test): Journalists are supposed to be willing to die for the story! To get the truth out there. Now tell me, are you ready to risk it all for truth!?
+		eliza: *Eliza thinks about it*
+		test (test): I said, ARE YOU READY TO RISK EVERYTHING FOR THE TRUTH?
+		eliza: *Eliza looks straight into your eyes* I'm ready.
+		test (test): LOUDER!
+		eliza: I AM READY TO RISK IT ALL ON THE TRUTH!
+		[signal arg="gameStart"]
+		[end_timeline]
+	- Goodbye
+		[end_timeline]
+else:
+	eliza: ...
+	[end_timeline]

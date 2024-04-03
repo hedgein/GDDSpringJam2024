@@ -35,6 +35,8 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "Beatrice_timeline": "res://Beatrice_timeline.dtl",
+"Eliza_Defeat_timeline": "res://Eliza_Defeat_timeline.dtl",
+"Eliza_Night_timeline": "res://Eliza_Night_timeline.dtl",
 "Eliza_timeline": "res://Eliza_timeline.dtl",
 "Fitz_Defeat_timeline": "res://Fitz_Defeat_timeline.dtl",
 "Fitz_Night_timeline": "res://Fitz_Night_timeline.dtl",

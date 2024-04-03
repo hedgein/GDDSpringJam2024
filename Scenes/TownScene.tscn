@@ -167,7 +167,7 @@ person_name = "Nat_timeline"
 sprite = ExtResource("13_1wo0q")
 
 [node name="Townsperson7" parent="." instance=ExtResource("3_ec2kp")]
-position = Vector2(736, 888)
+position = Vector2(776, 856)
 person_name = "Maria_timeline"
 sprite = ExtResource("14_hbvup")
 
