@@ -1,0 +1,16 @@
+maria: Who's there!?
+if {isMariaDead} == false:
+	- Game
+		maria (test): YOU! You are the demon that took Mark's soul!
+		test (test): Yes I did. He challenged me in a game. He wagered his soul for your freedom.
+		maria: *Maria chuckles* I didn't need him to do that. And now, I must live without him.
+		test (test): *You crack a grin* You don't have to.
+		maria: *Maria turns to you* What do you mean?
+		test: I have his soul. If you beat me in a game, I'll give it to you and restore him to life. Lose, and I get your soul.
+		maria: *Maria ponders your suggestion with a heavy look on her face* Very well. If it is to free my beloved from a lifetime of damnation, I will gladly play you in a game.
+		[signal arg="gameStart"]
+	- Goodbye
+		[end_timeline]
+else:
+	maria: ...
+	[end_timeline]

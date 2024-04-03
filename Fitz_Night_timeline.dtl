@@ -9,7 +9,7 @@ if {isFitzDead} == false:
 		fitz: *Fitz looks intrigued* and if you win?
 		test (test): I get your soul.
 		fitz: *Fitz laughes* My soul? That's worth nothing! I'll take you up on your dice game, demon.
-		[signal arg="Gamestart"]
+		[signal arg="gameStart"]
 	- Goodbye
 		[end_timeline]
 else:
