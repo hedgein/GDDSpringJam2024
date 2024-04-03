@@ -32,6 +32,11 @@ func _physics_process(delta):
 			get_tree().change_scene_to_file("res://Scenes/NightScene.tscn")
 			is_day = false
 			day_countdown = 60.0 * day_mins
+			
+		if BgMusic.has_stream_playback():
+			pass
+		else:
+			BgMusic.playHuman()
 	# IF NIGHT
 	else:
 		#print(night_countdown)
@@ -42,3 +47,11 @@ func _physics_process(delta):
 			#get_tree().change_scene_to_file("res://Scenes/TownScene.tscn")
 			is_day = true
 			night_countdown = 60.0 * night_mins
+			
+		if BgMusic.stream.resource_path.get_file().get_basename() == "bgHuman":
+			BgMusic.stop()
+			BgMusic.playDevil()
+		elif BgMusic.has_stream_playback():
+			pass
+		else:
+			BgMusic.playDevil()
