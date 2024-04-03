@@ -1,9 +1,10 @@
-[gd_scene load_steps=16 format=3 uid="uid://gmmuphfshtjp"]
+[gd_scene load_steps=12 format=3 uid="uid://gmmuphfshtjp"]
 
 [ext_resource type="Texture2D" uid="uid://co2bklyak01l5" path="res://samirah_sprites/devil_game_tileset_walls.png" id="1_6607e"]
 [ext_resource type="Texture2D" uid="uid://o1a0t2g4treg" path="res://TempSprites/testmap.png" id="1_l4qpy"]
 [ext_resource type="PackedScene" uid="uid://bfxuixl1v4a7g" path="res://Scenes/Player.tscn" id="2_jxbnx"]
 [ext_resource type="PackedScene" uid="uid://8qie5wxnci5f" path="res://Scenes/Townsperson.tscn" id="3_ec2kp"]
+
 [ext_resource type="Texture2D" uid="uid://cticm8s3tuw00" path="res://samirah_sprites/devil_game_tileset_door.png" id="4_80cub"]
 [ext_resource type="Texture2D" uid="uid://dtvc5kjqjj00w" path="res://samirah_sprites/devil_game_tileset_livegrass.png" id="4_icaki"]
 [ext_resource type="Texture2D" uid="uid://b5glt10vayno0" path="res://samirah_sprites/devil_game_tileset_dirtpath.png" id="5_4garg"]
@@ -44,85 +45,17 @@ texture_region_size = Vector2i(8, 8)
 1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:1/0/physics_layer_0/angular_velocity = 0.0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4efrg"]
-texture = ExtResource("4_80cub")
-texture_region_size = Vector2i(8, 8)
-0:0/0 = 0
-0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-0:0/0/physics_layer_0/angular_velocity = 0.0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, -4, 4, -4, 4, 4, -4, 4)
-1:0/0 = 0
-1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-1:0/0/physics_layer_0/angular_velocity = 0.0
-1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, -4, 4, -4, 4, 4, -4, 4)
-2:0/0 = 0
-2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-2:0/0/physics_layer_0/angular_velocity = 0.0
-2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, -4, 4, -4, 4, 4, -4, 4)
-0:1/0 = 0
-0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-0:1/0/physics_layer_0/angular_velocity = 0.0
-0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, -4, 4, -4, 4, 4, -4, 4)
-1:1/0 = 0
-1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-1:1/0/physics_layer_0/angular_velocity = 0.0
-1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, -4, 4, -4, 4, 4, -4, 4)
-2:1/0 = 0
-2:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-2:1/0/physics_layer_0/angular_velocity = 0.0
-2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, -4, 4, -4, 4, 4, -4, 4)
-0:2/0 = 0
-0:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-0:2/0/physics_layer_0/angular_velocity = 0.0
-0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, -4, 4, -4, 4, 4, -4, 4)
-1:2/0 = 0
-1:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-1:2/0/physics_layer_0/angular_velocity = 0.0
-1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, -4, 4, -4, 4, 4, -4, 4)
-2:2/0 = 0
-2:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-2:2/0/physics_layer_0/angular_velocity = 0.0
-2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, -4, 4, -4, 4, 4, -4, 4)
-0:3/0 = 0
-0:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-0:3/0/physics_layer_0/angular_velocity = 0.0
-0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, -4, 4, -4, 4, 4, -4, 4)
-1:3/0 = 0
-1:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-1:3/0/physics_layer_0/angular_velocity = 0.0
-1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, -4, 4, -4, 4, 4, -4, 4)
-2:3/0 = 0
-2:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-2:3/0/physics_layer_0/angular_velocity = 0.0
-2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, -4, 4, -4, 4, 4, -4, 4)
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_57nom"]
-texture = ExtResource("5_l087w")
-texture_region_size = Vector2i(8, 8)
-0:0/0 = 0
-0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-0:0/0/physics_layer_0/angular_velocity = 0.0
-1:0/0 = 0
-1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-1:0/0/physics_layer_0/angular_velocity = 0.0
-0:1/0 = 0
-0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-0:1/0/physics_layer_0/angular_velocity = 0.0
-
 [sub_resource type="TileSet" id="TileSet_fl4bq"]
 tile_size = Vector2i(8, 8)
 physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_6bs7m")
 sources/2 = SubResource("TileSetAtlasSource_s4md2")
 sources/0 = SubResource("TileSetAtlasSource_14d7a")
-sources/3 = SubResource("TileSetAtlasSource_4efrg")
-sources/4 = SubResource("TileSetAtlasSource_57nom")
 
 [node name="TownScene" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
-position = Vector2(0, 3)
 scale = Vector2(3, 3)
 tile_set = SubResource("TileSet_fl4bq")
 rendering_quadrant_size = 128
@@ -138,7 +71,6 @@ layer_2/tile_data = PackedInt32Array(0, 0, 1, 65536, 0, 1, 131072, 0, 1, 196608,
 layer_3/name = "AirObjects"
 layer_3/z_index = 9
 layer_3/tile_data = PackedInt32Array(524308, 4, 0, 524309, 4, 0, 524310, 4, 0, 524311, 4, 1, 524307, 65540, 1342177280, 1966087, 65539, 1, 2031623, 65539, 2, 1966101, 65539, 1, 2031637, 65539, 2, 1245205, 65539, 1, 1310741, 65539, 2, 1245191, 65539, 1, 1310727, 65539, 2, 655367, 65539, 1, 720903, 65539, 2, 655381, 65539, 1, 720917, 65539, 2, 1835028, 4, 0, 1835029, 4, 0, 1835030, 4, 0, 1835014, 4, 0, 1835015, 4, 0, 1835016, 4, 0, 1114118, 4, 0, 1114119, 4, 0, 1114120, 4, 0, 524294, 4, 0, 524295, 4, 0, 524296, 4, 0, 917540, 4, 0, 524333, 4, 0, 1114157, 4, 0, 1835053, 4, 0, 1835063, 4, 0, 1114167, 4, 0, 524343, 4, 0, 2490423, 4, 0, 1835031, 4, 1, 1835027, 4, 268435457, 1835052, 4, 268435457, 1114156, 4, 268435457, 524332, 4, 268435457, 917539, 4, 268435457, 1114132, 4, 0, 1114133, 4, 0, 1114134, 4, 0, 1114135, 4, 1, 1114131, 4, 268435457, 1114117, 4, 268435457, 524293, 4, 268435457, 1835013, 4, 268435457, 1114166, 4, 268435457, 1835062, 4, 268435457, 524342, 4, 268435457, 1835054, 4, 1, 1835064, 4, 1, 1114168, 4, 1, 524344, 4, 1, 524334, 4, 1, 917541, 4, 1, 1114121, 4, 1, 524297, 4, 1, 1835017, 4, 1, 1835036, 4, 1)
-
 [node name="Sprite2D" type="Sprite2D" parent="."]
 visible = false
 texture = ExtResource("1_l4qpy")

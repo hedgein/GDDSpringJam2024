@@ -30,8 +30,14 @@ var reroll_pending : bool = true # track if a reroll has been used without clear
 var doubled_down : bool = false
 var opponent_cheating : bool
 
+var pot : int = 20000 # gold to be won
+var cheats_active : int = 0 # used to calculate cheat costs
+
+var gold_label : Label
+
 # Called when the node enters the scene tree for the first time.
 func _ready():# Replace with function body.
+	gold_label = $GoldLabel
 	cheats_container = $CheatButtonsContainer
 	reroll_container = $RerollButtonsContainer
 	ddown_container = $DoubleDownContainer
@@ -64,6 +70,7 @@ func _ready():# Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	gold_label.text = str(Global.gold)
 	pass
 
 func update_die_lists():
@@ -76,6 +83,7 @@ func update_die_lists():
 
 func _on_low_roller_button_toggled(toggled_on: bool):
 	low_roller_active = toggled_on
+	cheats_active += 1 if toggled_on else -1
 	for i in range(0,6):
 		if max_map1[i]:
 			die1.sides[i] = (max_value + 1) / 2 if toggled_on else max_value
@@ -86,6 +94,7 @@ func _on_low_roller_button_toggled(toggled_on: bool):
 
 func _on_wicked_one_button_toggled(toggled_on: bool):
 	wicked_one_active = toggled_on
+	cheats_active += 1 if toggled_on else -1
 	die1.is_wicked_one = toggled_on
 	die2.is_wicked_one = toggled_on
 	update_die_lists()
@@ -93,9 +102,19 @@ func _on_wicked_one_button_toggled(toggled_on: bool):
 
 func _on_vicious_recycle_button_toggled(toggled_on: bool):
 	vicious_recycle_active = toggled_on
+	cheats_active += 1 if toggled_on else -1
 	pass # Replace with function body.
 
 func _on_roll_button_pressed():
+	Global.gold -= 10000 # subtract 10000 gold fee for playing
+	match cheats_active: # subtract additional gold for cheats
+		1:
+			Global.gold -= 1000
+		2:
+			Global.gold -= 3000
+		3:
+			Global.gold -= 6000
+	pot = 20000
 	cheats_container.hide()
 	roll_button.hide()
 	roll_dice()
@@ -122,6 +141,15 @@ func _on_move_on_button_pressed():
 	pass # Replace with function body.
 
 func _on_double_down_button_pressed():
+	Global.gold -= 10000 # subtract 10000 gold fee for playing
+	match cheats_active: # subtract additional gold for cheats
+		1:
+			Global.gold -= 1000
+		2:
+			Global.gold -= 3000
+		3:
+			Global.gold -= 6000
+	pot = 40000
 	ddown_container.hide()
 	doubled_down = true
 	reroll_pending = true
@@ -175,6 +203,8 @@ func cheat(die1_active: bool = true, die2_active: bool = true):
 func win():
 	$DebugLabel.set_text("WIN")
 	$DebugLabel.show()
+	Global.souls += 1
+	Global.gold += pot
 	pass
 	
 func lose():
