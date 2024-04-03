@@ -1,20 +1,20 @@
 [gd_scene load_steps=25 format=3 uid="uid://cr4xc6mhw23ne"]
 
-[ext_resource type="Texture2D" uid="uid://co2bklyak01l5" path="res://samirah_sprites/devil_game_tileset_walls.png" id="1_kprnq"]
-[ext_resource type="Texture2D" uid="uid://dtvc5kjqjj00w" path="res://samirah_sprites/devil_game_tileset_livegrass.png" id="2_uf00a"]
-[ext_resource type="Texture2D" uid="uid://b5glt10vayno0" path="res://samirah_sprites/devil_game_tileset_dirtpath.png" id="3_tawrp"]
-[ext_resource type="Texture2D" uid="uid://cticm8s3tuw00" path="res://samirah_sprites/devil_game_tileset_door.png" id="4_6vchq"]
-[ext_resource type="Texture2D" uid="uid://dsfk2nu58f3er" path="res://samirah_sprites/devil_game_tileset_roof.png" id="5_ejo3l"]
-[ext_resource type="Texture2D" uid="uid://bevlmrovtjk55" path="res://samirah_sprites/devil_game_tileset_deadgrass.png" id="6_67ct4"]
+[ext_resource type="Texture2D" uid="uid://dhds8ndnk56l" path="res://samirah_sprites/devil_game_tileset_walls.png" id="1_kprnq"]
+[ext_resource type="Texture2D" uid="uid://bivoq0urdmabu" path="res://samirah_sprites/devil_game_tileset_livegrass.png" id="2_uf00a"]
+[ext_resource type="Texture2D" uid="uid://jsihh1d4v53d" path="res://samirah_sprites/devil_game_tileset_dirtpath.png" id="3_tawrp"]
+[ext_resource type="Texture2D" uid="uid://cnhg88xh4w2ru" path="res://samirah_sprites/devil_game_tileset_door.png" id="4_6vchq"]
+[ext_resource type="Texture2D" uid="uid://ily3stgt8nng" path="res://samirah_sprites/devil_game_tileset_roof.png" id="5_ejo3l"]
+[ext_resource type="Texture2D" uid="uid://rmhwfu5jt5rk" path="res://samirah_sprites/devil_game_tileset_deadgrass.png" id="6_67ct4"]
 [ext_resource type="PackedScene" uid="uid://bfxuixl1v4a7g" path="res://Scenes/Player.tscn" id="6_sci7l"]
 [ext_resource type="PackedScene" uid="uid://8qie5wxnci5f" path="res://Scenes/Townsperson.tscn" id="7_jlx3b"]
-[ext_resource type="Texture2D" uid="uid://diypecgsia4oa" path="res://samirah_sprites/devil_game_npc_beatrice_sprite_sheet.png" id="8_wqdij"]
-[ext_resource type="Texture2D" uid="uid://bkdnakxbx85aq" path="res://samirah_sprites/devil_game_npc_eliza_sprite_sheet.png" id="9_7nthg"]
-[ext_resource type="Texture2D" uid="uid://cdb147a2wk4vn" path="res://samirah_sprites/devil_game_npc_fitz_sprite_sheet.png" id="10_c4ihu"]
-[ext_resource type="Texture2D" uid="uid://dch6ui3jujegp" path="res://samirah_sprites/devil_game_npc_geppetto_sprite_sheet.png" id="11_jigqc"]
-[ext_resource type="Texture2D" uid="uid://8u6xg3o5d2wd" path="res://samirah_sprites/devil_game_npc_luigi_sprite_sheet.png" id="12_je76j"]
-[ext_resource type="Texture2D" uid="uid://5fus45pofhbo" path="res://samirah_sprites/devil_game_npc_nat_sprite_sheet.png" id="13_vn4ej"]
-[ext_resource type="Texture2D" uid="uid://fbobu4fvkgqx" path="res://samirah_sprites/devil_game_npc_maria_day_sprite_sheet.png" id="14_jbwnq"]
+[ext_resource type="Texture2D" uid="uid://drs6ntvkfgpcc" path="res://samirah_sprites/devil_game_npc_beatrice_sprite_sheet.png" id="8_wqdij"]
+[ext_resource type="Texture2D" uid="uid://b0w3ibgmpmms3" path="res://samirah_sprites/devil_game_npc_eliza_sprite_sheet.png" id="9_7nthg"]
+[ext_resource type="Texture2D" uid="uid://l6fvgp4wcavu" path="res://samirah_sprites/devil_game_npc_fitz_sprite_sheet.png" id="10_c4ihu"]
+[ext_resource type="Texture2D" uid="uid://beo7avsj8n1s7" path="res://samirah_sprites/devil_game_npc_geppetto_sprite_sheet.png" id="11_jigqc"]
+[ext_resource type="Texture2D" uid="uid://deh81alfhbm82" path="res://samirah_sprites/devil_game_npc_luigi_sprite_sheet.png" id="12_je76j"]
+[ext_resource type="Texture2D" uid="uid://dx7x5rnxr2jcj" path="res://samirah_sprites/devil_game_npc_nat_sprite_sheet.png" id="13_vn4ej"]
+[ext_resource type="Texture2D" uid="uid://bxhablemryv5r" path="res://samirah_sprites/devil_game_npc_maria_day_sprite_sheet.png" id="14_jbwnq"]
 [ext_resource type="PackedScene" uid="uid://t4ho1ytoa3x7" path="res://Scenes/follow_camera.tscn" id="15_yidwg"]
 [ext_resource type="PackedScene" uid="uid://ok0xl53lrqw5" path="res://UI.tscn" id="16_sj0eg"]
 
@@ -162,7 +162,7 @@ sprite = ExtResource("10_c4ihu")
 
 [node name="Townsperson4" parent="." instance=ExtResource("7_jlx3b")]
 position = Vector2(744, 320)
-person_name = "Gepetto_Night_timeline"
+person_name = "Geppetto_Night_timeline"
 sprite = ExtResource("11_jigqc")
 
 [node name="Townsperson5" parent="." instance=ExtResource("7_jlx3b")]
