@@ -201,11 +201,15 @@ func win():
 	$DebugLabel.show()
 	Global.souls += 1
 	Global.gold += pot
+	await get_tree().create_timer(1).timeout
+	get_tree().change_scene_to_file("res://Scenes/NightScene.tscn")
 	pass
 	
 func lose():
 	$DebugLabel.set_text("LOSE")
 	$DebugLabel.show()
+	await get_tree().create_timer(1).timeout
+	get_tree().change_scene_to_file("res://Scenes/NightScene.tscn")
 	pass
 
 func _on_debug_reload_scene_pressed():
