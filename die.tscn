@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://pl31x6ff6x2c"]
 
 [ext_resource type="Script" path="res://Scenes/die.gd" id="1_k3mif"]
-[ext_resource type="Texture2D" uid="uid://cwjrqkd4w5kpx" path="res://dice_sprites/player_die_base.png" id="2_lwv8l"]
-[ext_resource type="Texture2D" uid="uid://c10l3juxgsiry" path="res://dice_sprites/dice_labels/devil.png" id="3_iiadw"]
+[ext_resource type="Texture2D" uid="uid://d0db80eqqojun" path="res://dice_sprites/player_die_base.png" id="2_lwv8l"]
+[ext_resource type="Texture2D" uid="uid://05l67dmkfu4d" path="res://dice_sprites/dice_labels/devil.png" id="3_iiadw"]
 
 [node name="Die" type="Node2D"]
 script = ExtResource("1_k3mif")

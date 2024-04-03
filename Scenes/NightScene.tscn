@@ -149,36 +149,55 @@ position = Vector2(348.201, 104.317)
 position = Vector2(1216, 136)
 person_name = "Beatrice_Night_timeline"
 sprite = ExtResource("8_wqdij")
+die_sides_a = [2, 2, 3, 4, 5, 5]
+die_sides_b = [2, 2, 3, 4, 5, 5]
+cheats = 0.014
 
 [node name="Townsperson2" parent="." instance=ExtResource("7_jlx3b")]
 position = Vector2(336, 368)
 person_name = "Eliza_Night_timeline"
 sprite = ExtResource("9_7nthg")
+die_sides_a = [1, 1, 2, 3, 4, 7]
+die_sides_b = [1, 1, 2, 3, 4, 7]
+cheats = 0.3
 
 [node name="Townsperson3" parent="." instance=ExtResource("7_jlx3b")]
 position = Vector2(1192, 552)
 person_name = "Fitz_Night_timeline"
 sprite = ExtResource("10_c4ihu")
+die_sides_a = [1, 7, 7, 7, 7, 7]
+die_sides_b = [1, 7, 7, 7, 7, 7]
 
 [node name="Townsperson4" parent="." instance=ExtResource("7_jlx3b")]
 position = Vector2(744, 320)
 person_name = "Geppetto_Night_timeline"
 sprite = ExtResource("11_jigqc")
+die_sides_a = [1, 3, 3, 3, 5, 5]
+die_sides_b = [1, 1, 1, 3, 5, 9]
+cheats = 9.6
 
 [node name="Townsperson5" parent="." instance=ExtResource("7_jlx3b")]
 position = Vector2(1112, 824)
 person_name = "Peppino_Night_timeline"
 sprite = ExtResource("12_je76j")
+die_sides_a = [1, 1, 1, 5, 6, 7]
+die_sides_b = [2, 2, 2, 4, 5, 6]
+cheats = 0.2
 
 [node name="Townsperson6" parent="." instance=ExtResource("7_jlx3b")]
 position = Vector2(256, 888)
 person_name = "Nat_Night_timeline"
 sprite = ExtResource("13_vn4ej")
+die_sides_a = [2, 2, 2, 5, 5, 5]
+die_sides_b = [3, 3, 3, 4, 4, 6]
+cheats = 0.2
 
 [node name="Townsperson7" parent="." instance=ExtResource("7_jlx3b")]
 position = Vector2(776, 856)
 person_name = "Maria_Night_timeline"
 sprite = ExtResource("14_jbwnq")
+die_sides_b = [1, 2, 3, 4, 5, 6]
+cheats = 0.7
 
 [node name="FollowCamera" parent="." node_paths=PackedStringArray("player", "tilemap") instance=ExtResource("15_yidwg")]
 limit_left = 0

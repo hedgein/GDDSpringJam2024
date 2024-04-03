@@ -18,16 +18,35 @@ func _ready():
 	sprite = $DieSprite
 	label_sprite = $LabelSprite
 	
-	for filePath in DirAccess.get_files_at("res://dice_sprites/dice_cubes/"):
-		var fullPath = "res://dice_sprites/dice_cubes/" + filePath  
-		if filePath.get_extension() == "png":  
-			die_sprites.append( load(fullPath) )
+	#for filePath in DirAccess.get_files_at("res://dice_sprites/dice_cubes/"):
+		#var fullPath = "res://dice_sprites/dice_cubes/" + filePath  
+		#if filePath.get_extension() == "png":  
+			#die_sprites.append( load(fullPath) )
+	die_sprites.append(preload("res://dice_sprites/dice_cubes/player_die_1.png"))
+	die_sprites.append(preload("res://dice_sprites/dice_cubes/player_die_2.png"))
+	die_sprites.append(preload("res://dice_sprites/dice_cubes/player_die_3.png"))
+	die_sprites.append(preload("res://dice_sprites/dice_cubes/player_die_4.png"))
+	die_sprites.append(preload("res://dice_sprites/dice_cubes/player_die_5.png"))
+	die_sprites.append(preload("res://dice_sprites/dice_cubes/player_die_6.png"))
+	die_sprites.append(preload("res://dice_sprites/dice_cubes/player_die_7.png"))
+	die_sprites.append(preload("res://dice_sprites/dice_cubes/player_die_8.png"))
+	die_sprites.append(preload("res://dice_sprites/dice_cubes/player_die_9.png"))
+	die_sprites.append(preload("res://dice_sprites/dice_cubes/player_die_devil.png"))
 	
-	for filePath in DirAccess.get_files_at("res://dice_sprites/dice_labels/"):
-		var fullPath = "res://dice_sprites/dice_labels/" + filePath  
-		if filePath.get_extension() == "png":  
-			label_sprites.append( load(fullPath) )
-	pass # Replace with function body.
+	#for filePath in DirAccess.get_files_at("res://dice_sprites/dice_labels/"):
+		#var fullPath = "res://dice_sprites/dice_labels/" + filePath  
+		#if filePath.get_extension() == "png":  
+			#label_sprites.append( load(fullPath) )
+	label_sprites.append(preload("res://dice_sprites/dice_labels/1.png"))
+	label_sprites.append(preload("res://dice_sprites/dice_labels/2.png"))
+	label_sprites.append(preload("res://dice_sprites/dice_labels/3.png"))
+	label_sprites.append(preload("res://dice_sprites/dice_labels/4.png"))
+	label_sprites.append(preload("res://dice_sprites/dice_labels/5.png"))
+	label_sprites.append(preload("res://dice_sprites/dice_labels/6.png"))
+	label_sprites.append(preload("res://dice_sprites/dice_labels/7.png"))
+	label_sprites.append(preload("res://dice_sprites/dice_labels/8.png"))
+	label_sprites.append(preload("res://dice_sprites/dice_labels/9.png"))
+	label_sprites.append(preload("res://dice_sprites/dice_labels/devil.png"))
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
