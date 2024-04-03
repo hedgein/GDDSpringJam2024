@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bfxuixl1v4a7g"]
 
 [ext_resource type="Script" path="res://Scenes/Player.gd" id="1_cp5ij"]
-[ext_resource type="Texture2D" uid="uid://biv1vv1d14nl6" path="res://samirah_sprites/devil_game_player_sprite_sheet.png" id="2_ye0kf"]
+[ext_resource type="Texture2D" uid="uid://drqja57uq2fko" path="res://samirah_sprites/devil_game_player_sprite_sheet.png" id="2_ye0kf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x2fok"]
 
