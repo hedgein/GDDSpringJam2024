@@ -1,0 +1,17 @@
+if {isPeppinoDead} == false:
+	peppino: Hello, strange demon! Step on up to try our speed eating challenge! Eat an XL pan in under five minutes and it's free!
+	- Game
+		peppino: A game? What kind of game?
+		test (test): A game of chance. If you win, you will gain riches beyond your imagination!
+		peppino: But I don't want riches! Riches ruined my life!
+		test (test): Oh? Do tell.
+		peppino: I used to be a track star. I represented Italy in the Olympics a couple of decades ago, and got us a coveted gold medal. And with came many sponsorship deals and sports cars.
+		peppino: I got drunk. Both metaphorically on the wealth and power, and literally that one night. I was joyriding in a sports car. I got in a bad crash. Messed up my legs, and lost me my fortune.
+		test (test): Then how about this? I send you back to your prime, and give you a second chance if you win. I'll even make you immune to the time paradoxes that would ensue.
+		peppino: Deal! I'll do anything for a chance at my former glory!
+		[signal arg="gameStart"]
+	- Goodbye
+		[end_timeline]
+else:
+	peppino: ...
+	[end_timeline]

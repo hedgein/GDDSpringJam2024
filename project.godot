@@ -46,6 +46,8 @@ directories/dtl_directory={
 "Nat_Defeat_timeline": "res://Nat_Defeat_timeline.dtl",
 "Nat_Night_timeline": "res://Nat_Night_timeline.dtl",
 "Nat_timeline": "res://Nat_timeline.dtl",
+"Peppino_Defeat_timeline": "res://Peppino_Defeat_timeline.dtl",
+"Peppino_Night_timeline": "res://Peppino_Night_timeline.dtl",
 "Peppino_timeline": "res://Peppino_timeline.dtl",
 "eliza": "res://timelines/eliza.dtl",
 "fitz": "res://fitz.dtl",
