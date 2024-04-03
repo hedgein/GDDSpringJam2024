@@ -8,6 +8,9 @@ var night_countdown = 60.0 * night_mins
 var talking_to : Townsperson = Townsperson.new()
 
 var is_day = true
+
+var gold : int = 60000
+var souls : int = 0
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass

@@ -8,6 +8,7 @@
 font_size = 75
 
 [node name="RootNode" type="Node2D"]
+visible = false
 script = ExtResource("1_ur6k0")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -23,9 +24,15 @@ grow_horizontal = 2
 text = "Art of the Deal"
 label_settings = SubResource("LabelSettings_xbrar")
 
+[node name="TextureProgressBar" parent="CanvasLayer" instance=ExtResource("2_gjr6n")]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -300.0
+offset_bottom = 0.0
+grow_vertical = 0
+
 [node name="TownScene" parent="." instance=ExtResource("1_4vxta")]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2, 2)
-
-[node name="TextureProgressBar" parent="." instance=ExtResource("2_gjr6n")]
