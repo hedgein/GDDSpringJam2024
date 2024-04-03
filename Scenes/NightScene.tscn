@@ -167,17 +167,17 @@ sprite = ExtResource("11_jigqc")
 
 [node name="Townsperson5" parent="." instance=ExtResource("7_jlx3b")]
 position = Vector2(1112, 824)
-person_name = "Peppino_timeline"
+person_name = "Peppino_Night_timeline"
 sprite = ExtResource("12_je76j")
 
 [node name="Townsperson6" parent="." instance=ExtResource("7_jlx3b")]
 position = Vector2(256, 888)
-person_name = "Nat_timeline"
+person_name = "Nat_Night_timeline"
 sprite = ExtResource("13_vn4ej")
 
 [node name="Townsperson7" parent="." instance=ExtResource("7_jlx3b")]
 position = Vector2(776, 856)
-person_name = "Maria_timeline"
+person_name = "Maria_Night_timeline"
 sprite = ExtResource("14_jbwnq")
 
 [node name="FollowCamera" parent="." node_paths=PackedStringArray("player", "tilemap") instance=ExtResource("15_yidwg")]
