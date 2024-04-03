@@ -36,7 +36,7 @@ func _physics_process(delta):
 		#print(night_countdown)
 		night_countdown -= delta if !fast_time else delta * 1.5
 		# check when night ends
-		if night_countdown <= 0:
+		if night_countdown <= 0 and check_timeout:
 			#print("switching to day")
 			is_day = true
 			night_countdown = 60.0 * night_mins
