@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://ok0xl53lrqw5"]
+
+[ext_resource type="PackedScene" uid="uid://b1vqyj8mh2xgd" path="res://Scenes/candle.tscn" id="1_a3ad7"]
+[ext_resource type="Script" path="res://UI.gd" id="1_v8avv"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_v8avv")
+
+[node name="TextureProgressBar" parent="." instance=ExtResource("1_a3ad7")]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -300.0
+offset_bottom = 0.0
+grow_vertical = 0
+
+[node name="GoldLabel" type="Label" parent="."]
+offset_left = 1044.0
+offset_top = 7.0
+offset_right = 1152.0
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0.972549, 0.866667, 0, 1)
+text = "GOLD: 60000"
+
+[node name="SoulsLabel" type="Label" parent="."]
+offset_left = 1038.0
+offset_top = 28.0
+offset_right = 1140.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(0.337255, 1, 0.980392, 1)
+text = "SOULS: 0
+"

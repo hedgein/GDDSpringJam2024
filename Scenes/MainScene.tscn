@@ -8,7 +8,6 @@
 font_size = 75
 
 [node name="RootNode" type="Node2D"]
-visible = false
 script = ExtResource("1_ur6k0")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -32,7 +31,26 @@ offset_top = -300.0
 offset_bottom = 0.0
 grow_vertical = 0
 
+[node name="GoldLabel" type="Label" parent="CanvasLayer"]
+offset_left = 1044.0
+offset_top = 7.0
+offset_right = 1152.0
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0.972549, 0.866667, 0, 1)
+text = "GOLD: 60000"
+
+[node name="SoulsLabel" type="Label" parent="CanvasLayer"]
+offset_left = 1038.0
+offset_top = 28.0
+offset_right = 1140.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(0.337255, 1, 0.980392, 1)
+text = "SOULS: 0
+"
+
 [node name="TownScene" parent="." instance=ExtResource("1_4vxta")]
+visible = false
 
 [node name="Camera2D" type="Camera2D" parent="."]
+visible = false
 zoom = Vector2(2, 2)

@@ -7,8 +7,10 @@ func _ready():
 	pass # Replace with function body.
 	candle_head = $Sprite2D
 
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	
 	if Global.is_day:
 		value = Global.day_countdown * 10 
 		
