@@ -147,12 +147,12 @@ position = Vector2(348.201, 104.317)
 
 [node name="Townsperson" parent="." instance=ExtResource("7_jlx3b")]
 position = Vector2(1216, 136)
-person_name = "Beatrice_timeline"
+person_name = "Beatrice_Night_timeline"
 sprite = ExtResource("8_wqdij")
 
 [node name="Townsperson2" parent="." instance=ExtResource("7_jlx3b")]
 position = Vector2(336, 368)
-person_name = "Eliza_timeline"
+person_name = "Eliza_Night_timeline"
 sprite = ExtResource("9_7nthg")
 
 [node name="Townsperson3" parent="." instance=ExtResource("7_jlx3b")]
