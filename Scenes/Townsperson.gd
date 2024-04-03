@@ -1,8 +1,9 @@
 class_name Townsperson extends Node2D
 
 @export var person_name = "" # should be somehow accessible by dialogic
-@export var x : int 
-@export var y : int
+@export var sprite : Texture2D
+#@export var x : int 
+#@export var y : int
 
 @export var die_sides_a = [1,2,3,4,5,6] # each of these dice is customizable based on the person's character (their soul)
 @export var die_sides_b = [1,1,4,4,7,7]
@@ -15,7 +16,8 @@ class_name Townsperson extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	position = Vector2(x,y)
+	#position = Vector2(x,y)
+	$Sprite2D.texture = sprite
 	pass # Replace with function body.
 
 

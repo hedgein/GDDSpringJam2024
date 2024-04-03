@@ -4,12 +4,14 @@
 [ext_resource type="Texture2D" uid="uid://o1a0t2g4treg" path="res://TempSprites/testmap.png" id="1_l4qpy"]
 [ext_resource type="PackedScene" uid="uid://bfxuixl1v4a7g" path="res://Scenes/Player.tscn" id="2_jxbnx"]
 [ext_resource type="PackedScene" uid="uid://8qie5wxnci5f" path="res://Scenes/Townsperson.tscn" id="3_ec2kp"]
-[ext_resource type="Texture2D" uid="uid://ck0lq4vn8h0gh" path="res://samirah_sprites/devil_game_tileset_livegrass.png" id="4_icaki"]
-[ext_resource type="Texture2D" uid="uid://64snggdahbdw" path="res://samirah_sprites/devil_game_tileset_door.png" id="4_n56rp"]
-[ext_resource type="Texture2D" uid="uid://bmfoaxg0oou28" path="res://samirah_sprites/devil_game_tileset_dirtpath.png" id="5_4garg"]
-[ext_resource type="Texture2D" uid="uid://h28saecb46om" path="res://samirah_sprites/devil_game_tileset_roof.png" id="5_5nlpm"]
-[ext_resource type="PackedScene" path="res://Scenes/follow_camera.tscn" id="6_y58m3"]
-[ext_resource type="PackedScene" uid="uid://ok0xl53lrqw5" path="res://UI.tscn" id="10_xcdkv"]
+
+[ext_resource type="Texture2D" uid="uid://dtvc5kjqjj00w" path="res://samirah_sprites/devil_game_tileset_livegrass.png" id="4_icaki"]
+[ext_resource type="Texture2D" uid="uid://cticm8s3tuw00" path="res://samirah_sprites/devil_game_tileset_door.png" id="4_n56rp"]
+[ext_resource type="Texture2D" uid="uid://b5glt10vayno0" path="res://samirah_sprites/devil_game_tileset_dirtpath.png" id="5_4garg"]
+[ext_resource type="Texture2D" uid="uid://dsfk2nu58f3er" path="res://samirah_sprites/devil_game_tileset_roof.png" id="5_5nlpm"]
+[ext_resource type="PackedScene" uid="uid://t4ho1ytoa3x7" path="res://Scenes/follow_camera.tscn" id="6_y58m3"]
+[ext_resource type="Texture2D" uid="uid://diypecgsia4oa" path="res://samirah_sprites/devil_game_npc_beatrice_sprite_sheet.png" id="9_n6bkx"]
+
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_14d7a"]
 texture = ExtResource("1_6607e")
@@ -135,24 +137,21 @@ texture = ExtResource("1_l4qpy")
 position = Vector2(348.201, 104.317)
 
 [node name="Townsperson" parent="." instance=ExtResource("3_ec2kp")]
-visible = false
-person_name = "Abby"
-x = 100
-y = 200
+texture_filter = 1
+position = Vector2(232, 352)
+person_name = "Beatrice"
+sprite = ExtResource("9_n6bkx")
 
 [node name="Townsperson2" parent="." instance=ExtResource("3_ec2kp")]
 visible = false
 person_name = "Bobby"
-x = 300
-y = -400
 
 [node name="Townsperson3" parent="." instance=ExtResource("3_ec2kp")]
 visible = false
 person_name = "Callie"
-x = -500
-y = 600
 
 [node name="FollowCamera" parent="." node_paths=PackedStringArray("player", "tilemap") instance=ExtResource("6_y58m3")]
+visible = false
 limit_left = 0
 limit_top = 0
 player = NodePath("../Player")
