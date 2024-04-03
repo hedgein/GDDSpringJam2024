@@ -1,0 +1,6 @@
+join fitz 1
+fitz: No. *Fitz looks at you in horror* NOOOOO! You can't do this to me!
+test (test): Yes I can. Your sinful ways have caught up to you, Fitzgerald. Now it's time to pay up!
+set {isFitzDead} = true
+test (test): *Got Fitz's soul!*
+[end_timeline]

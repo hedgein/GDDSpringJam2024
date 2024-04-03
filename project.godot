@@ -36,6 +36,7 @@ directories/dch_directory={
 directories/dtl_directory={
 "Beatrice_timeline": "res://Beatrice_timeline.dtl",
 "Eliza_timeline": "res://Eliza_timeline.dtl",
+"Fitz_Defeat_timeline": "res://Fitz_Defeat_timeline.dtl",
 "Fitz_Night_timeline": "res://Fitz_Night_timeline.dtl",
 "Fitz_timeline": "res://Fitz_timeline.dtl",
 "Gepetto_timeline": "res://Gepetto_timeline.dtl",
@@ -56,7 +57,14 @@ glossary/default_case_sensitive=true
 layout/style_list=["res://dialogic_assets/test_style.tres"]
 layout/default_style="res://dialogic_assets/test_style.tres"
 variables={
-"Character": ""
+"Character": "",
+"isBeatriceDead": false,
+"isElizaDead": false,
+"isFitzDead": false,
+"isGeppettoDead": false,
+"isMariaDead": false,
+"isNatDead": false,
+"isPeppinoDead": false
 }
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
