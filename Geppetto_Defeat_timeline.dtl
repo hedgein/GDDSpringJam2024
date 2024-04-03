@@ -1,0 +1,5 @@
+gepetto: *Geppetto looks to the ground in shame* Forgive me, dear daughter, for I have sinned. In my attempts to see you again, I struck a deal with the devil, and now I will never see you again.
+test (test): I couldn't have said it any better myself Geppetto. Now, get in the bag!
+set {isGeppettoDead} = true
+test: *Got Geppetto's soul!*
+[end_timeline]
