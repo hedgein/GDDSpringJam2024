@@ -1,0 +1,10 @@
+maria: *Maria lowers her head in defeat* Well, at least I will be free of Fitz.
+if {isFitzDead} == true:
+	test (test): Ummm, about that...
+	maria: You got his soul? May I see it?
+	*You take Fitz's soul out of your bag* *Eliza looks at it and spits on it*
+	maria: Thank you for letting me do that. I'm ready now.
+test (test): Well, on a more positive note, at least you get to spend an eternity with your beloved.
+*Got Maria's soul!*
+set {isMariaDead} = true
+[end_timeline]
